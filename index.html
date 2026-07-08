@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Diamonds in the Desert Car Show · March 6, 2027 · Oro Valley, AZ</title>
+<meta name="description" content="A student-run classic & custom car show benefiting the automotive program at Canyon del Oro High School. Saturday, March 6, 2027 at Oro Valley Marketplace. Register your car, sponsor, or donate — 100% of proceeds go back to CDO students." />
+<meta property="og:title" content="Diamonds in the Desert Car Show — March 6, 2027" />
+<meta property="og:description" content="Student-run car show benefiting CDO automotive students. Oro Valley Marketplace. Register, sponsor, or donate." />
+
+<!-- ================================================================
+     EDIT YOUR FACTS IN ONE PLACE ↓  (search: "SITE CONFIG", near bottom)
+     Every date/price/link on the page is filled from that one object,
+     so the site can never show two different dates again.
+================================================================= -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style"
+  href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&display=swap" />
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&display=swap" />
+
+<style>
+/* ========== TOKENS — CDO Dorados (forest green + gold) ========== */
+:root{
+  --green-900:#0B2E20; --green-800:#123D2B; --green-700:#1B4D36; --green-600:#245e43;
+  --green-100:#E6EFEA;
+  --gold-500:#C9A227; --gold-400:#D9B84A; --gold-600:#A8861D;
+  --sand-50:#FAF8F2; --sand-100:#F1ECDF;
+  --ink-900:#171A18; --ink-500:#5A615C;
+  --maxw:1240px; --gutter:clamp(24px,5vw,96px);
+  --font-display:"Fraunces",Georgia,serif;
+  --font-body:"Archivo",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--font-body);background:var(--sand-50);color:var(--ink-900);line-height:1.6;overflow-x:hidden;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--gold-500);color:var(--green-900)}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;line-height:1.06;letter-spacing:-.02em}
+.eyebrow{font-family:var(--font-body);font-weight:700;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase}
+.container{max-width:var(--maxw);margin:0 auto;padding-inline:var(--gutter)}
+.pad{padding-block:clamp(64px,10vw,150px)}
+section{position:relative}
+
+/* ========== BUTTONS ========== */
+.btn{--bg:var(--gold-500);--fg:var(--green-900);--bd:var(--gold-500);
+  display:inline-flex;align-items:center;gap:.6em;font-family:var(--font-body);font-weight:700;font-size:.98rem;
+  padding:.95em 1.5em;background:var(--bg);color:var(--fg);border:2px solid var(--bd);border-radius:2px;cursor:pointer;
+  transition:transform .18s var(--ease),background .18s var(--ease),color .18s var(--ease),box-shadow .18s var(--ease);min-height:48px}
+.btn:hover{background:var(--gold-400);border-color:var(--gold-400);transform:translateY(-2px);box-shadow:0 10px 24px -12px rgba(0,0,0,.5)}
+.btn:focus-visible{outline:3px solid var(--gold-400);outline-offset:3px}
+.btn .arw{transition:transform .2s var(--ease)}
+.btn:hover .arw{transform:translateX(4px)}
+.btn--ghost{--bg:transparent;--fg:var(--sand-50);--bd:rgba(217,184,74,.55)}
+.btn--ghost:hover{--bg:rgba(217,184,74,.12);background:rgba(217,184,74,.12);border-color:var(--gold-400);color:#fff}
+.btn--green{--bg:var(--green-700);--fg:var(--sand-50);--bd:var(--green-700)}
+.btn--green:hover{background:var(--green-600);border-color:var(--green-600)}
+.btn--onlight{--bg:var(--green-800);--fg:var(--sand-50);--bd:var(--green-800)}
+.btn--onlight:hover{background:var(--green-700);border-color:var(--green-700)}
+.btn--outline{--bg:transparent;--fg:var(--green-800);--bd:rgba(18,61,43,.35)}
+.btn--outline:hover{--bg:var(--green-100);background:var(--green-100);border-color:var(--green-700);color:var(--green-800)}
+
+/* ========== BRAND / LOGO CREST ========== */
+.brand{display:flex;align-items:center;gap:.75rem;color:var(--sand-50)}
+.crest{width:46px;height:46px;flex:none;border-radius:50%;background:var(--sand-50);display:grid;place-items:center;
+  box-shadow:0 0 0 2px var(--gold-500),0 6px 16px -8px rgba(0,0,0,.6);overflow:hidden}
+.crest img{width:78%;height:78%;object-fit:contain}
+.brand__txt{line-height:1.05}
+.brand__txt b{font-family:var(--font-display);font-weight:700;font-size:1.02rem;letter-spacing:-.01em;display:block}
+.brand__txt small{font-size:.63rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-400);font-weight:700}
+
+/* ========== NAV ========== */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;
+  padding:.9rem var(--gutter);transition:background .3s var(--ease),padding .3s var(--ease),box-shadow .3s var(--ease)}
+.nav.scrolled{background:var(--green-900);padding-block:.6rem;box-shadow:0 8px 30px -18px rgba(0,0,0,.85)}
+.nav__links{display:flex;align-items:center;gap:2rem}
+.nav__links a{color:var(--sand-50);font-weight:600;font-size:.94rem;position:relative;padding-block:.3rem}
+.nav__links a:not(.btn)::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--gold-500);transition:width .25s var(--ease)}
+.nav__links a:not(.btn):hover::after{width:100%}
+.nav__toggle{display:none;background:none;border:0;cursor:pointer;padding:.4rem;width:44px;height:44px}
+.nav__toggle span{display:block;width:26px;height:2px;background:var(--sand-50);margin:5px auto;transition:.3s var(--ease)}
+.mobile{position:fixed;inset:0;z-index:99;background:var(--green-900);display:flex;flex-direction:column;justify-content:center;gap:.3rem;
+  padding:var(--gutter);transform:translateY(-100%);transition:transform .45s var(--ease)}
+.mobile.open{transform:translateY(0)}
+.mobile a{color:var(--sand-50);font-family:var(--font-display);font-size:1.9rem;font-weight:600;padding:.45rem 0;border-bottom:1px solid rgba(230,239,234,.12)}
+.mobile a .num{font-family:var(--font-body);font-size:.75rem;color:var(--gold-400);letter-spacing:.2em;margin-right:1rem;vertical-align:middle}
+.mobile .btn{margin-top:1.4rem;font-size:1.05rem;justify-content:center}
+
+/* ========== HERO ========== */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;
+  background:radial-gradient(120% 80% at 82% -10%,rgba(201,162,39,.14),transparent 55%),linear-gradient(160deg,var(--green-900) 0%,var(--green-800) 60%,var(--green-900) 100%);
+  color:var(--sand-50);overflow:hidden;padding-bottom:clamp(40px,6vw,90px);padding-top:120px}
+.hero::before{content:"";position:absolute;inset:0;opacity:.05;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hero__sweep{position:absolute;top:-40%;left:-30%;width:80%;height:180%;background:radial-gradient(closest-side,rgba(217,184,74,.10),transparent 70%);filter:blur(10px);animation:sweep 14s ease-in-out infinite alternate;pointer-events:none}
+@keyframes sweep{from{transform:translateX(0) translateY(0)}to{transform:translateX(60%) translateY(8%)}}
+.hero__ridge{position:absolute;left:0;right:0;bottom:0;width:100%;height:24vh;min-height:140px;opacity:.5;pointer-events:none}
+.hero__ridge path{fill:none;stroke:rgba(201,162,39,.28);stroke-width:1.5}
+.hero__ridge .fill{fill:rgba(11,46,32,.5);stroke:none}
+.hero__inner{position:relative;z-index:2;max-width:var(--maxw);margin:0 auto;width:100%;padding-inline:var(--gutter)}
+.hero__eyebrow{display:inline-flex;align-items:center;gap:.9rem;color:var(--gold-400);margin-bottom:1.3rem;opacity:0;transform:translateY(18px);animation:rise .7s var(--ease) .15s forwards}
+.hero__eyebrow::before{content:"";width:44px;height:1px;background:var(--gold-500)}
+.hero h1{font-size:clamp(3rem,10.5vw,8rem);font-weight:900;line-height:.95;letter-spacing:-.03em;max-width:14ch;text-wrap:balance}
+.hero h1 .line{display:block;overflow:hidden}
+.hero h1 .line i{display:block;font-style:normal;opacity:0;transform:translateY(105%);animation:reveal .9s var(--ease) forwards}
+.hero h1 .l1 i{animation-delay:.2s}.hero h1 .l2 i{animation-delay:.34s}
+.hero h1 .l3 i{animation-delay:.48s;color:var(--gold-400);font-style:italic}
+@keyframes reveal{to{transform:translateY(0);opacity:1}}
+@keyframes rise{to{opacity:1;transform:translateY(0)}}
+.hero__sub{margin-top:1.6rem;max-width:52ch;font-size:clamp(1.05rem,1.6vw,1.28rem);color:var(--green-100);opacity:0;transform:translateY(18px);animation:rise .7s var(--ease) .7s forwards}
+.hero__cta{margin-top:2.2rem;display:flex;flex-wrap:wrap;gap:1rem;opacity:0;transform:translateY(18px);animation:rise .7s var(--ease) .85s forwards}
+.hero__facts{margin-top:clamp(2.2rem,4vw,3.4rem);display:flex;flex-wrap:wrap;border-top:1px solid rgba(230,239,234,.16);opacity:0;transform:translateY(18px);animation:rise .7s var(--ease) 1s forwards}
+.hero__fact{padding:1.3rem 2rem 0 0;margin-right:2rem;border-right:1px solid rgba(230,239,234,.14);min-width:0}
+.hero__fact:last-child{border-right:0;margin-right:0}
+.hero__fact .k{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-400);font-weight:700;display:block;margin-bottom:.35rem}
+.hero__fact .v{font-family:var(--font-display);font-size:1.12rem;font-weight:600;color:#fff;line-height:1.2}
+.hero__fact .v small{display:block;font-family:var(--font-body);font-size:.8rem;color:var(--green-100);font-weight:400;letter-spacing:0}
+
+/* ========== MARQUEE ========== */
+.marquee{background:var(--gold-500);color:var(--green-900);overflow:hidden;border-block:2px solid var(--green-900)}
+.marquee__track{display:flex;white-space:nowrap;width:max-content;animation:scroll 32s linear infinite}
+.marquee:hover .marquee__track{animation-play-state:paused}
+.marquee span{font-family:var(--font-display);font-weight:900;font-style:italic;font-size:clamp(1.25rem,3vw,2rem);padding:.6em 1em;display:flex;align-items:center;gap:1.3em;letter-spacing:-.01em}
+.marquee span::after{content:"◆";font-size:.5em;font-style:normal;color:var(--green-800)}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ========== REVEAL ========== */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal[data-d="1"]{transition-delay:.08s}.reveal[data-d="2"]{transition-delay:.16s}.reveal[data-d="3"]{transition-delay:.24s}
+.sec-eyebrow{color:var(--gold-600);display:inline-flex;align-items:center;gap:.8rem;margin-bottom:1.2rem}
+.sec-eyebrow::before{content:"";width:34px;height:1px;background:var(--gold-600)}
+.sec-eyebrow.on-dark{color:var(--gold-400)}.sec-eyebrow.on-dark::before{background:var(--gold-400)}
+
+/* ========== CAUSE ========== */
+.cause{background:var(--sand-50)}
+.cause__grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,6rem);align-items:center}
+.cause h2{font-size:clamp(2.2rem,5vw,4rem);color:var(--green-900);max-width:16ch}
+.cause h2 em{font-style:italic;color:var(--gold-600)}
+.cause__body p{color:var(--ink-500);max-width:60ch;margin-bottom:1.2rem;font-size:1.08rem}
+.cause__body p strong{color:var(--ink-900)}
+.cause__pull{border-left:3px solid var(--gold-500);padding-left:1.4rem;margin:2rem 0;font-family:var(--font-display);font-size:clamp(1.25rem,2.4vw,1.8rem);font-weight:600;color:var(--green-800);line-height:1.28;font-style:italic}
+.cause__crest{display:flex;flex-direction:column;align-items:flex-start;gap:1.6rem}
+.cause__crestimg{width:min(64%,300px);aspect-ratio:1;background:radial-gradient(circle at 50% 40%,#fff,var(--sand-100));border-radius:50%;display:grid;place-items:center;box-shadow:0 0 0 1px rgba(18,61,43,.1),0 30px 60px -30px rgba(11,46,32,.4);position:relative}
+.cause__crestimg::after{content:"";position:absolute;inset:14px;border:1px solid rgba(201,162,39,.35);border-radius:50%}
+.cause__crestimg img{width:66%;height:66%;object-fit:contain}
+.cause__stat{display:flex;align-items:center;gap:1.3rem}
+.cause__stat .big{font-family:var(--font-display);font-weight:900;font-size:clamp(3.4rem,7vw,5.4rem);color:var(--green-800);line-height:.9;letter-spacing:-.03em;flex:none}
+.cause__stat .lbl{font-weight:500;color:var(--ink-500);max-width:26ch;font-size:.98rem;line-height:1.45;border-left:2px solid var(--gold-500);padding-left:1.3rem}
+.cause__stat .lbl b{color:var(--green-700);font-weight:700}
+
+/* ========== DETAILS ========== */
+.details{background:var(--green-900);color:var(--sand-50)}
+.details__head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:1.5rem;margin-bottom:clamp(2.4rem,5vw,3.6rem)}
+.details h2{font-size:clamp(2.2rem,5vw,4rem);color:#fff;max-width:14ch}
+.details h2 em{color:var(--gold-400);font-style:italic}
+.details__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(230,239,234,.14);border:1px solid rgba(230,239,234,.14)}
+.dcard{background:var(--green-900);padding:clamp(1.6rem,3vw,2.3rem)}
+.dcard .n{font-family:var(--font-body);font-size:.7rem;letter-spacing:.2em;color:var(--gold-400);font-weight:700;text-transform:uppercase}
+.dcard h3{font-size:clamp(1.3rem,2.4vw,1.8rem);color:#fff;margin:.9rem 0 .5rem;font-weight:600}
+.dcard p{color:var(--green-100);font-size:.96rem}
+.dcard a.link{color:var(--gold-400);font-weight:600;border-bottom:1px solid rgba(217,184,74,.4)}
+.dcard a.link:hover{border-color:var(--gold-400)}
+/* schedule timeline */
+.timeline{margin-top:clamp(2.4rem,5vw,3.6rem);border-top:1px solid rgba(230,239,234,.14);padding-top:clamp(2rem,4vw,2.8rem)}
+.timeline__lead{font-family:var(--font-body);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-400);font-weight:700;margin-bottom:1.6rem}
+.timeline__row{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;position:relative}
+.timeline__row::before{content:"";position:absolute;top:9px;left:0;right:0;height:1px;background:linear-gradient(90deg,var(--gold-500),rgba(201,162,39,.2))}
+.tstop{position:relative;padding-top:2rem}
+.tstop::before{content:"";position:absolute;top:3px;left:0;width:14px;height:14px;border-radius:50%;background:var(--gold-500);box-shadow:0 0 0 4px var(--green-900)}
+.tstop .t{font-family:var(--font-display);font-weight:700;font-size:1.25rem;color:#fff}
+.tstop .d{color:var(--green-100);font-size:.9rem;margin-top:.2rem}
+.tstop.is-award::before{background:#fff;box-shadow:0 0 0 4px var(--green-900),0 0 0 6px var(--gold-500)}
+
+/* ========== REGISTER / PRICING ========== */
+.register{background:var(--sand-50)}
+.register__grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(2rem,6vw,5rem);align-items:center}
+.register h2{font-size:clamp(2.2rem,5vw,3.8rem);color:var(--green-900);max-width:14ch}
+.register h2 em{color:var(--gold-600);font-style:italic}
+.register__lead{color:var(--ink-500);margin:1.3rem 0 1.8rem;max-width:46ch;font-size:1.08rem}
+.register__meta{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:2rem}
+.chip{border:1px solid rgba(18,61,43,.2);border-radius:100px;padding:.5rem 1rem;font-size:.86rem;font-weight:600;color:var(--green-800);background:#fff}
+.chip b{color:var(--gold-600)}
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
+.price{border:1.5px solid rgba(18,61,43,.14);border-radius:3px;padding:clamp(1.4rem,2.5vw,2rem);background:#fff;position:relative;transition:transform .25s var(--ease),border-color .25s var(--ease)}
+.price:hover{transform:translateY(-3px)}
+.price--early{border-color:var(--gold-500);background:linear-gradient(180deg,#fff,#FFFDF6)}
+.price__tag{position:absolute;top:-11px;left:clamp(1.4rem,2.5vw,2rem);background:var(--gold-500);color:var(--green-900);font-size:.66rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:.3rem .7rem;border-radius:2px}
+.price .k{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-500);font-weight:700}
+.price .amt{font-family:var(--font-display);font-weight:900;font-size:clamp(2.6rem,6vw,3.6rem);color:var(--green-900);line-height:1;margin:.6rem 0 .3rem;letter-spacing:-.02em}
+.price .note{color:var(--ink-500);font-size:.9rem}
+.register__cta{margin-top:1.8rem;display:flex;flex-wrap:wrap;gap:1rem;align-items:center}
+.register__deadline{color:var(--ink-500);font-size:.9rem}
+.register__deadline b{color:var(--green-800)}
+
+/* ========== STUDENT-POWERED ========== */
+.student{background:var(--green-800);color:var(--sand-50);overflow:hidden;position:relative}
+.student::after{content:"";position:absolute;inset:0;opacity:.05;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.student__in{position:relative;z-index:1}
+.student__head{max-width:52ch;margin-bottom:clamp(2.6rem,5vw,4rem)}
+.student h2{font-size:clamp(2.2rem,5vw,4rem);color:#fff;margin-bottom:1rem}
+.student h2 em{color:var(--gold-400);font-style:italic}
+.student__head p{color:var(--green-100);font-size:1.1rem;max-width:52ch}
+.facets{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(230,239,234,.16);border:1px solid rgba(230,239,234,.16)}
+.facet{background:var(--green-800);padding:clamp(1.8rem,3vw,2.6rem)}
+.facet .no{font-family:var(--font-display);font-weight:900;font-size:2.4rem;color:var(--gold-400);line-height:1}
+.facet h3{font-size:clamp(1.35rem,2.4vw,1.8rem);color:#fff;margin:1rem 0 .6rem;font-weight:600}
+.facet p{color:var(--green-100);font-size:.98rem}
+
+/* ========== SPONSOR / SUPPORT ========== */
+.support{background:var(--sand-50)}
+.support__grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:start}
+.support h2{font-size:clamp(2rem,4.5vw,3.4rem);color:var(--green-900);max-width:15ch}
+.support h2 em{color:var(--gold-600);font-style:italic}
+.support__lead{color:var(--ink-500);margin:1.3rem 0 1.8rem;max-width:46ch;font-size:1.08rem}
+.support__list{list-style:none;display:grid;gap:.9rem;margin-bottom:2rem}
+.support__list li{display:flex;gap:.9rem;align-items:flex-start;color:var(--ink-500)}
+.support__list li b{color:var(--ink-900)}
+.support__list .tick{color:var(--gold-600);flex:none;margin-top:.15rem}
+.support__cta{display:flex;flex-wrap:wrap;gap:1rem}
+.support__aside{background:var(--green-900);color:var(--sand-50);border-radius:4px;padding:clamp(1.8rem,3vw,2.6rem)}
+.support__aside h3{color:#fff;font-size:1.5rem;margin-bottom:.6rem}
+.support__aside p{color:var(--green-100);font-size:.98rem;margin-bottom:1.4rem}
+.support__aside .donate-amt{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.4rem}
+.support__aside .donate-amt a{border:1px solid rgba(217,184,74,.4);color:var(--gold-400);border-radius:2px;padding:.5rem .9rem;font-weight:700;font-size:.9rem;transition:background .2s,color .2s}
+.support__aside .donate-amt a:hover{background:var(--gold-500);color:var(--green-900);border-color:var(--gold-500)}
+.logowall{margin-top:clamp(2.6rem,5vw,4rem)}
+.logowall__lead{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-600);font-weight:700;margin-bottom:1.2rem;display:flex;align-items:center;gap:.8rem}
+.logowall__lead::before{content:"";width:34px;height:1px;background:var(--gold-600)}
+.logowall__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:rgba(18,61,43,.12);border:1px solid rgba(18,61,43,.12)}
+.logoslot{position:relative;min-height:clamp(122px,13vw,160px);background:#fff;display:grid;place-items:center;padding:1.1rem;color:var(--ink-500);font-weight:600;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;transition:background .3s,color .3s}
+.logoslot img{max-width:76%;max-height:80px;object-fit:contain}
+.logoslot.is-name{font-family:var(--font-display);color:var(--green-800);font-weight:600;font-size:clamp(1rem,1.6vw,1.2rem);letter-spacing:-.01em;text-transform:none;line-height:1.15;text-align:center}
+.logoslot.is-open{opacity:.5}
+.logoslot.is-cta{color:var(--gold-600);text-transform:none;letter-spacing:0;font-size:.9rem;font-weight:700}
+.logoslot.is-cta:hover{background:var(--green-100)}
+.logoslot__tag{position:absolute;top:8px;left:8px;background:var(--gold-500);color:var(--green-900);font-family:var(--font-body);font-size:.56rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .5rem;border-radius:2px}
+
+/* ========== GALLERY ========== */
+.gallery{background:var(--sand-100)}
+.gallery__head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:1rem;margin-bottom:2.5rem}
+.gallery h2{font-size:clamp(2rem,4.5vw,3.4rem);color:var(--green-900)}
+.gallery__note{color:var(--ink-500);font-size:.9rem;max-width:40ch}
+.filmstrip{display:grid;grid-template-columns:repeat(6,1fr);gap:.9rem}
+.frame{aspect-ratio:4/5;background:var(--green-100);border:1px solid rgba(23,26,24,.08);position:relative;overflow:hidden;display:block}
+.frame:nth-child(even){aspect-ratio:4/3}
+.frame img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.frame:hover img{transform:scale(1.06)}
+@media(max-width:900px){.filmstrip{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:520px){.filmstrip{grid-template-columns:repeat(2,1fr)}}
+
+/* ========== FAQ ========== */
+.faq{background:var(--sand-50)}
+.faq__grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+.faq h2{font-size:clamp(2rem,4.5vw,3.4rem);color:var(--green-900);position:sticky;top:120px}
+.faq h2 em{color:var(--gold-600);font-style:italic}
+.acc__item{border-top:1px solid rgba(23,26,24,.14)}
+.acc__item:last-child{border-bottom:1px solid rgba(23,26,24,.14)}
+.acc__q{width:100%;text-align:left;background:none;border:0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;padding:1.5rem 0;font-family:var(--font-display);font-weight:600;font-size:clamp(1.1rem,2vw,1.35rem);color:var(--green-900)}
+.acc__q .ic{flex:none;width:30px;height:30px;border:1.5px solid var(--gold-600);border-radius:50%;position:relative;transition:background .25s,transform .25s}
+.acc__q .ic::before,.acc__q .ic::after{content:"";position:absolute;background:var(--gold-600);transition:transform .25s,background .25s}
+.acc__q .ic::before{width:12px;height:1.5px;top:50%;left:50%;transform:translate(-50%,-50%)}
+.acc__q .ic::after{width:1.5px;height:12px;top:50%;left:50%;transform:translate(-50%,-50%)}
+.acc__item.open .acc__q .ic{background:var(--gold-500);transform:rotate(90deg)}
+.acc__item.open .acc__q .ic::before,.acc__item.open .acc__q .ic::after{background:var(--green-900)}
+.acc__item.open .acc__q .ic::after{transform:translate(-50%,-50%) scaleY(0)}
+.acc__a{max-height:0;overflow:hidden;transition:max-height .35s var(--ease)}
+.acc__a p{padding:0 0 1.5rem;color:var(--ink-500);max-width:60ch}
+.acc__a a{color:var(--gold-600);font-weight:600;border-bottom:1px solid rgba(168,134,29,.4)}
+
+/* ========== FINAL CTA ========== */
+.finalcta{background:var(--green-900);color:var(--sand-50);text-align:center;position:relative;overflow:hidden}
+.finalcta .sweep2{position:absolute;inset:0;background:radial-gradient(60% 60% at 50% 0%,rgba(201,162,39,.14),transparent 60%);pointer-events:none}
+.finalcta__in{position:relative;z-index:1}
+.finalcta .eyebrow{color:var(--gold-400)}
+.finalcta h2{font-size:clamp(2.4rem,6vw,5rem);color:#fff;margin:1.1rem auto;max-width:16ch}
+.finalcta h2 em{color:var(--gold-400);font-style:italic}
+.finalcta p{color:var(--green-100);max-width:50ch;margin:0 auto 2.2rem;font-size:1.1rem}
+.finalcta__btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+
+/* ========== FOOTER ========== */
+.footer{background:var(--green-900);color:var(--green-100);border-top:2px solid var(--gold-500);padding-block:clamp(3.5rem,7vw,6rem) 2rem}
+.footer__top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.5rem;margin-bottom:3rem}
+.footer .brand{margin-bottom:1.2rem}
+.footer__blurb{max-width:38ch;color:var(--green-100);font-size:.96rem}
+.footer h4{font-family:var(--font-body);font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-400);font-weight:700;margin-bottom:1.1rem}
+.footer ul{list-style:none;display:grid;gap:.7rem}
+.footer ul a{color:var(--green-100);font-size:.96rem;transition:color .2s}
+.footer ul a:hover{color:var(--gold-400)}
+.footer__bottom{border-top:1px solid rgba(230,239,234,.14);padding-top:1.6rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;font-size:.82rem;color:rgba(230,239,234,.6)}
+.footer__bottom a{color:var(--gold-400)}
+.tax{background:rgba(201,162,39,.1);border:1px solid rgba(201,162,39,.3);padding:1rem 1.2rem;border-radius:2px;font-size:.86rem;color:var(--green-100);margin-top:1.2rem}
+.tax b{color:var(--gold-400)}.tax__mark{color:var(--gold-500)}
+
+/* ========== HERO PHOTO ========== */
+.hero__bg{position:absolute;inset:0;z-index:0;overflow:hidden}
+.hero__bg img{width:100%;height:100%;object-fit:cover;object-position:50% 42%}
+.hero__bg::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(157deg,rgba(11,46,32,.82) 0%,rgba(11,46,32,.60) 46%,rgba(11,46,32,.92) 100%),
+  linear-gradient(90deg,rgba(11,46,32,.6) 0%,rgba(11,46,32,.1) 52%,transparent 72%)}
+.hero__sweep{z-index:1}
+
+/* ========== TESTIMONIALS ========== */
+.voices{background:var(--green-900);color:var(--sand-50)}
+.voices__head{margin-bottom:clamp(2.4rem,5vw,3.6rem)}
+.voices h2{font-size:clamp(2rem,4.5vw,3.4rem);color:#fff}
+.voices h2 em{color:var(--gold-400);font-style:italic}
+.voices__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.quote{background:var(--green-800);border:1px solid rgba(230,239,234,.12);border-radius:4px;padding:clamp(1.6rem,3vw,2.2rem);position:relative;display:flex;flex-direction:column}
+.quote__mark{font-family:var(--font-display);font-weight:900;font-size:3.4rem;line-height:.7;color:var(--gold-500);height:1.2rem}
+.quote p{color:var(--green-100);font-size:1.05rem;margin:1.2rem 0 1.6rem;flex:1}
+.quote footer{border-top:1px solid rgba(230,239,234,.14);padding-top:1rem}
+.quote footer b{color:#fff;font-family:var(--font-display);font-weight:600;font-size:1.05rem;display:block}
+.quote footer span{color:var(--gold-400);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;font-weight:600}
+
+/* ========== SPONSOR TIERS ========== */
+.support__contact{margin-top:1.3rem;font-size:.9rem;color:var(--ink-500);max-width:46ch;line-height:1.5}
+.support__contact b{color:var(--green-800)}
+.support__contact a{color:var(--gold-600);font-weight:600;border-bottom:1px solid rgba(168,134,29,.4)}
+.support__mailcheck{margin-top:1.3rem;font-size:.82rem;color:var(--green-100);border-top:1px solid rgba(230,239,234,.14);padding-top:1.1rem}
+.support__mailcheck b{color:#fff}
+.tiers{margin-top:clamp(3rem,6vw,5rem)}
+.tiers__lead{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-600);font-weight:700;margin-bottom:.7rem;display:flex;align-items:center;gap:.8rem}
+.tiers__lead::before{content:"";width:34px;height:1px;background:var(--gold-600)}
+.tiers__title{font-size:clamp(1.8rem,4vw,2.8rem);color:var(--green-900);margin-bottom:2rem}
+.tiers__title em{color:var(--gold-600);font-style:italic}
+.tiers__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.1rem;align-items:start}
+.tier{background:#fff;border:1px solid rgba(18,61,43,.12);border-top:3px solid var(--gold-600);border-radius:3px;padding:clamp(1.4rem,2.2vw,1.8rem);display:flex;flex-direction:column;position:relative;transition:transform .25s var(--ease),box-shadow .25s var(--ease)}
+.tier:hover{transform:translateY(-4px);box-shadow:0 18px 40px -24px rgba(11,46,32,.45)}
+.tier--diamond{border:1.5px solid var(--gold-500);border-top:3px solid var(--gold-500);box-shadow:0 14px 34px -22px rgba(11,46,32,.4)}
+.tier--silver{border-top-color:#9aa3a2}
+.tier--copper{border-top-color:#b5793f}
+.tier__tag{position:absolute;top:-11px;left:clamp(1.4rem,2.2vw,1.8rem);background:var(--gold-500);color:var(--green-900);font-size:.58rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:.28rem .6rem;border-radius:2px}
+.tier__name{display:flex;align-items:center;gap:.5rem;font-family:var(--font-display);font-weight:700;font-size:1.4rem;color:var(--green-900)}
+.tier__gem{color:var(--gold-500);font-size:.85rem}
+.tier--silver .tier__gem{color:#9aa3a2}
+.tier--copper .tier__gem{color:#b5793f}
+.tier__price{font-family:var(--font-display);font-weight:900;font-size:clamp(2rem,4vw,2.6rem);color:var(--green-800);line-height:1;margin:.5rem 0 1.2rem;letter-spacing:-.02em}
+.tier ul{list-style:none;display:grid;gap:.6rem;margin:0}
+.tier li{position:relative;padding-left:1.3rem;font-size:.9rem;color:var(--ink-500);line-height:1.4}
+.tier li::before{content:"◆";position:absolute;left:0;top:.35em;color:var(--gold-500);font-size:.55em}
+.tier li b{color:var(--green-800)}
+.tiers__booth{margin-top:1.1rem;background:var(--green-900);color:var(--sand-50);border-radius:3px;padding:clamp(1.3rem,2.5vw,1.8rem);display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap}
+.tiers__booth b{color:#fff}
+.tiers__booth .muted{color:var(--green-100);font-size:.82rem}
+.tiers__boothprice{font-family:var(--font-display);font-weight:900;font-size:2.2rem;color:var(--gold-400);flex:none;line-height:1}
+.tier__cta{margin-top:1.4rem;width:100%;justify-content:center;font-size:.9rem}
+
+/* ========== SPONSOR FORM MODAL ========== */
+.modal{position:fixed;inset:0;z-index:200;display:none;align-items:flex-start;justify-content:center;padding:clamp(.75rem,4vw,3rem) .75rem;overflow-y:auto}
+.modal.open{display:flex}
+.modal__backdrop{position:fixed;inset:0;background:rgba(8,24,17,.74)}
+.modal__panel{position:relative;z-index:1;background:var(--sand-50);width:min(660px,100%);border-radius:4px;border-top:4px solid var(--gold-500);box-shadow:0 40px 100px -30px rgba(0,0,0,.6);padding:clamp(1.5rem,4vw,2.6rem);margin:auto}
+.modal__close{position:absolute;top:.8rem;right:.8rem;width:42px;height:42px;border:0;background:none;cursor:pointer;color:var(--ink-500);font-size:1.7rem;line-height:1;border-radius:3px;transition:background .2s,color .2s}
+.modal__close:hover{color:var(--green-800);background:var(--green-100)}
+.modal h3{font-size:clamp(1.6rem,3.4vw,2.3rem);color:var(--green-900)}
+.modal h3 em{color:var(--gold-600);font-style:italic}
+.modal__sub{color:var(--ink-500);font-size:.95rem;margin:.5rem 0 1.5rem;max-width:52ch}
+.field{margin-bottom:1rem}
+.field label{display:block;font-size:.74rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--green-800);margin-bottom:.4rem}
+.field label .req{color:var(--gold-600)}
+.field input,.field select,.field textarea{width:100%;padding:.72rem .85rem;border:1.5px solid rgba(18,61,43,.22);border-radius:2px;font-family:var(--font-body);font-size:1rem;background:#fff;color:var(--ink-900);transition:border-color .18s,box-shadow .18s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold-500);box-shadow:0 0 0 3px rgba(201,162,39,.18)}
+.field textarea{min-height:84px;resize:vertical}
+.field--row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.field--check{display:flex;gap:.6rem;align-items:flex-start;margin-top:.4rem}
+.field--check input{width:auto;flex:none;margin-top:.2rem;accent-color:var(--green-700)}
+.field--check label{text-transform:none;letter-spacing:0;font-weight:400;font-size:.85rem;color:var(--ink-500);line-height:1.4}
+.modal__actions{display:flex;gap:1rem 1.2rem;align-items:center;margin-top:1.5rem;flex-wrap:wrap}
+.modal__note{font-size:.8rem;color:var(--ink-500);max-width:30ch}
+.form-success{text-align:center;padding:1.5rem .5rem}
+.form-success__ic{width:58px;height:58px;margin:0 auto 1.1rem;border-radius:50%;background:var(--gold-500);color:var(--green-900);display:grid;place-items:center;font-size:1.5rem}
+.form-success h3{color:var(--green-900);margin-bottom:.6rem}
+.form-success p{color:var(--ink-500);max-width:42ch;margin:0 auto 1.5rem}
+
+/* ========== RESPONSIVE ========== */
+@media(max-width:980px){
+  .nav__links{display:none}.nav__toggle{display:block}
+  .cause__grid,.register__grid,.support__grid,.faq__grid{grid-template-columns:1fr}
+  .voices__grid{grid-template-columns:1fr}
+  .cause__crest{order:-1}
+  .faq h2{position:static}
+  .details__grid,.facets{grid-template-columns:repeat(2,1fr)}
+  .tiers__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .timeline__row{grid-template-columns:repeat(2,1fr);gap:1.8rem 1.5rem}
+  .logowall__grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:600px){
+  body{font-size:16px}
+  .hero__fact{border-right:0;padding-right:0;margin-right:0;flex:1 1 45%;padding-top:1.1rem}
+  .details__grid,.facets{grid-template-columns:1fr}
+  .tiers__grid{grid-template-columns:1fr}
+  .field--row{grid-template-columns:1fr}
+  .prices{grid-template-columns:1fr}
+  .timeline__row{grid-template-columns:1fr;gap:0}
+  .timeline__row::before{display:none}
+  .tstop{padding-top:0;padding-left:1.8rem;padding-bottom:1.6rem}
+  .tstop::before{top:6px;left:0}
+  .tstop:not(:last-child){border-left:1px solid rgba(230,239,234,.2);margin-left:6px;padding-left:calc(1.8rem - 6px)}
+  .footer__top{grid-template-columns:1fr}
+  .logowall__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .hero h1 .line i{opacity:1;transform:none}
+  .hero__eyebrow,.hero__sub,.hero__cta,.hero__facts{opacity:1;transform:none;animation:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav" id="nav">
+  <a href="#top" class="brand" aria-label="Diamonds in the Desert — home">
+    <span class="crest"><img src="assets/cdo-autos-logo.png" alt="CDO Autos logo" width="46" height="46" /></span>
+    <span class="brand__txt"><b>Diamonds in the Desert</b><small>CDO Autos · Oro Valley</small></span>
+  </a>
+  <div class="nav__links">
+    <a href="#cause">The Cause</a>
+    <a href="#details">Details</a>
+    <a href="#register">Register</a>
+    <a href="#support">Sponsor</a>
+    <a href="#faq">FAQ</a>
+    <a class="btn" data-bind="regHref" href="https://carshowpro.com/events/register/2820">Register a Car <span class="arw">→</span></a>
+  </div>
+  <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="mobile" id="mobile">
+  <a href="#cause"><span class="num">01</span>The Cause</a>
+  <a href="#details"><span class="num">02</span>Details</a>
+  <a href="#register"><span class="num">03</span>Register</a>
+  <a href="#support"><span class="num">04</span>Sponsor &amp; Donate</a>
+  <a href="#faq"><span class="num">05</span>FAQ</a>
+  <a class="btn" data-bind="regHref" href="https://carshowpro.com/events/register/2820">Register a Car <span class="arw">→</span></a>
+</div>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero" id="top">
+  <div class="hero__bg"><img src="assets/photos/hero.jpg" alt="Aerial view of the Diamonds in the Desert car show — rows of classic and custom cars at Oro Valley Marketplace with Pusch Ridge behind" fetchpriority="high" width="2400" height="1350" /></div>
+  <div class="hero__sweep"></div>
+  <div class="hero__inner">
+    <p class="eyebrow hero__eyebrow"><span data-bind="eyebrow">SATURDAY · MARCH 6, 2027 · ORO VALLEY, AZ</span></p>
+    <h1>
+      <span class="line l1"><i>Diamonds</i></span>
+      <span class="line l2"><i>in the</i></span>
+      <span class="line l3"><i>Desert.</i></span>
+    </h1>
+    <p class="hero__sub">A student-run classic &amp; custom car show under Pusch Ridge — where the automotive students of Canyon del Oro High School turn horsepower into hands-on careers.</p>
+    <div class="hero__cta">
+      <a class="btn" data-bind="regHref" href="https://carshowpro.com/events/register/2820">Register Your Car <span class="arw">→</span></a>
+      <a class="btn btn--ghost" href="#support">Sponsor or Donate</a>
+    </div>
+    <div class="hero__facts">
+      <div class="hero__fact"><span class="k">When</span><span class="v" data-bind="dateFull">Sat, March 6, 2027<small data-bind="timeLine">10 AM – 2 PM · Awards 3 PM</small></span></div>
+      <div class="hero__fact"><span class="k">Where</span><span class="v">Oro Valley Marketplace<small>2150 E Tangerine Rd</small></span></div>
+      <div class="hero__fact"><span class="k">Register</span><span class="v" data-bind="priceEarly">$25<small>Early bird · all makes</small></span></div>
+      <div class="hero__fact"><span class="k">Benefiting</span><span class="v">CDO Automotive<small>100% to students</small></span></div>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== MARQUEE ===================== -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Student-Built</span><span>100% To The Program</span><span>All Makes &amp; Years</span><span>Oro Valley Marketplace</span>
+    <span>Student-Built</span><span>100% To The Program</span><span>All Makes &amp; Years</span><span>Oro Valley Marketplace</span>
+  </div>
+</div>
+
+<!-- ===================== CAUSE ===================== -->
+<section class="cause pad" id="cause">
+  <div class="container cause__grid">
+    <div class="reveal">
+      <p class="eyebrow sec-eyebrow">Why it matters</p>
+      <h2>Every entry fee builds a <em>real career.</em></h2>
+      <div class="cause__body">
+        <p>Now in its 6th year, Diamonds in the Desert is planned, run, and hosted by the students of the <strong>CDO Autos</strong> program at Canyon del Oro High School — with student participants from across the Amphi district.</p>
+        <p>It's more than a show. It's a working classroom, where students gain real skills in automotive technology, business management, customer service, and event planning that carry straight into apprenticeships and the shop floor.</p>
+      </div>
+      <div class="cause__pull">"100% of every dollar raised goes straight back into the tools, parts, and training that put our students to work."</div>
+    </div>
+    <div class="cause__crest reveal" data-d="1">
+      <div class="cause__crestimg"><img src="assets/cdo-autos-logo.png" alt="CDO Autos program crest" width="300" height="300" /></div>
+      <div class="cause__stat">
+        <span class="big">100%</span>
+        <span class="lbl"><b>of proceeds</b> stay with the CDO automotive program — tax-deductible through CDO Auto Boosters.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DETAILS ===================== -->
+<section class="details pad" id="details">
+  <div class="container">
+    <div class="details__head reveal">
+      <div>
+        <p class="eyebrow sec-eyebrow on-dark">The field guide</p>
+        <h2>Show day, <em>at a glance.</em></h2>
+      </div>
+      <a class="btn btn--ghost" data-bind="regHref" href="https://carshowpro.com/events/register/2820">See classes &amp; register <span class="arw">→</span></a>
+    </div>
+    <div class="details__grid">
+      <div class="dcard reveal">
+        <span class="n">01 · Date &amp; time</span>
+        <h3 data-bind="dateFull">Sat, March 6, 2027</h3>
+        <p data-bind="timeLine">10 AM – 2 PM · Awards ceremony at 3 PM</p>
+      </div>
+      <div class="dcard reveal" data-d="1">
+        <span class="n">02 · Location</span>
+        <h3>Oro Valley Marketplace</h3>
+        <p>2150 E Tangerine Rd, Oro Valley, AZ — in the lot in front of Walmart, under Pusch Ridge.</p>
+      </div>
+      <div class="dcard reveal" data-d="2">
+        <span class="n">03 · Who shows</span>
+        <h3>All makes &amp; years</h3>
+        <p>Classics, muscle, imports, trucks, restomods &amp; project builds. Every make, model, and year is welcome.</p>
+      </div>
+      <div class="dcard reveal" data-d="3">
+        <span class="n">04 · Awards</span>
+        <h3>Dozens of classes</h3>
+        <p>Vehicles are judged across dozens of classes, with trophies at the 3 PM ceremony. Full class list on the registration page.</p>
+      </div>
+    </div>
+    <!-- schedule timeline -->
+    <div class="timeline reveal">
+      <div class="timeline__lead">Day-of schedule</div>
+      <div class="timeline__row">
+        <div class="tstop"><div class="t">10:00 AM</div><div class="d">Gates open &amp; roll-in</div></div>
+        <div class="tstop"><div class="t">Midday</div><div class="d">Show floor open</div></div>
+        <div class="tstop"><div class="t">2:00 PM</div><div class="d">Show wraps</div></div>
+        <div class="tstop is-award"><div class="t">3:00 PM</div><div class="d">Awards ceremony</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== REGISTER / PRICING ===================== -->
+<section class="register pad" id="register">
+  <div class="container register__grid">
+    <div class="reveal">
+      <p class="eyebrow sec-eyebrow">Bring a car</p>
+      <h2>Reserve your <em>spot.</em></h2>
+      <p class="register__lead">Registration is quick and online through CarShow Pro. Spaces are limited — lock in the early-bird rate before it's gone.</p>
+      <div class="register__meta">
+        <span class="chip">All makes, models &amp; years</span>
+        <span class="chip">Deadline: <b data-bind="regDeadline">Feb 28, 2027</b></span>
+        <span class="chip">100% benefits students</span>
+      </div>
+      <div class="register__cta">
+        <a class="btn" data-bind="regHref" href="https://carshowpro.com/events/register/2820">Register on CarShow Pro <span class="arw">→</span></a>
+      </div>
+    </div>
+    <div class="reveal" data-d="1">
+      <div class="prices">
+        <div class="price price--early">
+          <span class="price__tag">Best value</span>
+          <span class="k">Early bird</span>
+          <div class="amt" data-bind="priceEarly">$25</div>
+          <p class="note">Register before the <span data-bind="regDeadline">Feb 28, 2027</span> deadline.</p>
+        </div>
+        <div class="price">
+          <span class="k">Day of event</span>
+          <div class="amt" data-bind="priceDay">$30</div>
+          <p class="note">Same-day registration at the gate, space permitting.</p>
+        </div>
+      </div>
+      <p class="register__deadline" style="margin-top:1.2rem">Spectators welcome — <b>free to attend.</b> Bring the family and support the program.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STUDENT-POWERED ===================== -->
+<section class="student pad" id="student">
+  <div class="container student__in">
+    <div class="student__head reveal">
+      <p class="eyebrow sec-eyebrow on-dark">A student-powered event</p>
+      <h2>They don't just show up. <em>They run it.</em></h2>
+      <p>From the first planning meeting to the final trophy, this show is powered by CDO students — and every role is a real-world skill in the making.</p>
+    </div>
+    <div class="facets">
+      <div class="facet reveal">
+        <div class="no">01</div>
+        <h3>They plan it</h3>
+        <p>Students handle logistics, layout, registration, and outreach — learning project planning and organization from the ground up.</p>
+      </div>
+      <div class="facet reveal" data-d="1">
+        <div class="no">02</div>
+        <h3>They build it</h3>
+        <p>The automotive program is where students develop real technical expertise — diagnostics, repair, and the craft behind the cars.</p>
+      </div>
+      <div class="facet reveal" data-d="2">
+        <div class="no">03</div>
+        <h3>They run it</h3>
+        <p>On show day, students manage the field, greet exhibitors, and handle customer service — hospitality and leadership in action.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SPONSOR / SUPPORT ===================== -->
+<section class="support pad" id="support">
+  <div class="container">
+    <div class="support__grid">
+      <div class="reveal">
+        <p class="eyebrow sec-eyebrow">For local businesses</p>
+        <h2>Put your name on the <em>field.</em></h2>
+        <p class="support__lead">Sponsorship is the engine behind this show. Your support buys the real equipment students train on — tire machines, parts washers, engines to tear down and rebuild, paint gear, and shop supplies — while putting your brand in front of the whole community.</p>
+        <ul class="support__list">
+          <li><span class="tick">◆</span><span><b>Logo &amp; banner</b> at the show and on our website and social media.</span></li>
+          <li><span class="tick">◆</span><span><b>A 10×10 booth</b> to showcase your business, sell, or host an activity.</span></li>
+          <li><span class="tick">◆</span><span><b>Promo items</b> in 150 participant goody bags, plus free car registrations at the top tiers.</span></li>
+          <li><span class="tick">◆</span><span><b>Tax-deductible</b> — every dollar runs through CDO Auto Boosters.</span></li>
+        </ul>
+        <div class="support__cta">
+          <a class="btn" data-open-form data-bind="sponsorHref" href="mailto:diamondsinthedesertcarshow@gmail.com">Become a sponsor <span class="arw">→</span></a>
+        </div>
+        <p class="support__contact">Questions? Email <a data-bind="sponsorEmailHref" href="mailto:diamondsinthedesertcarshow@gmail.com"><span data-bind="sponsorEmail">diamondsinthedesertcarshow@gmail.com</span></a> or call <b>Jeremy Tarbet</b>, CDO Automotive Instructor, at <span data-bind="sponsorPhone">(520) 696-5669</span>.</p>
+      </div>
+      <aside class="support__aside reveal" data-d="1">
+        <h3>Can't make it? Give.</h3>
+        <p>A tax-deductible donation through CDO Auto Boosters goes directly to the students. Every amount makes a difference.</p>
+        <div class="donate-amt">
+          <a data-bind="donateHref" href="mailto:diamondsinthedesertcarshow@gmail.com?subject=Donation">$25</a>
+          <a data-bind="donateHref" href="mailto:diamondsinthedesertcarshow@gmail.com?subject=Donation">$50</a>
+          <a data-bind="donateHref" href="mailto:diamondsinthedesertcarshow@gmail.com?subject=Donation">$100</a>
+          <a data-bind="donateHref" href="mailto:diamondsinthedesertcarshow@gmail.com?subject=Donation">Other</a>
+        </div>
+        <a class="btn btn--ghost" data-bind="donateHref" href="mailto:diamondsinthedesertcarshow@gmail.com?subject=Donation" style="width:100%;justify-content:center">Make a donation <span class="arw">→</span></a>
+        <p class="support__mailcheck">Prefer to mail a check? <b>CDO Auto Boosters</b>, 25 Calle Concordia, Tucson, AZ 85704. Raffle-prize donations are welcome, too.</p>
+      </aside>
+    </div>
+
+    <!-- SPONSORSHIP TIERS -->
+    <div class="tiers reveal">
+      <p class="tiers__lead">Sponsorship levels</p>
+      <h3 class="tiers__title">Pick your <em>tier.</em></h3>
+      <div class="tiers__grid">
+        <div class="tier tier--diamond">
+          <span class="tier__tag">Top tier</span>
+          <div class="tier__name"><span class="tier__gem">◆</span>Diamond</div>
+          <div class="tier__price">$1,000</div>
+          <ul>
+            <li><b>Logo + link</b> on website &amp; socials</li>
+            <li>Banner at the registration tables</li>
+            <li>Live PA announcements about your business</li>
+            <li>Premium 10×10 booth</li>
+            <li><b>Present the Diamond Trophy</b></li>
+            <li>3 free car registrations</li>
+            <li>Goody-bag promo items</li>
+          </ul>
+          <button type="button" class="btn tier__cta" data-open-form data-level="Diamond — $1,000">Choose Diamond</button>
+        </div>
+        <div class="tier tier--gold">
+          <div class="tier__name"><span class="tier__gem">◆</span>Gold</div>
+          <div class="tier__price">$750</div>
+          <ul>
+            <li>Business name on our website</li>
+            <li>Acknowledgment on socials &amp; website</li>
+            <li>Recognition at the event</li>
+            <li>Premium 10×10 booth</li>
+            <li>2 free car registrations</li>
+            <li>Goody-bag promo items</li>
+          </ul>
+          <button type="button" class="btn btn--outline tier__cta" data-open-form data-level="Gold — $750">Choose Gold</button>
+        </div>
+        <div class="tier tier--silver">
+          <div class="tier__name"><span class="tier__gem">◆</span>Silver</div>
+          <div class="tier__price">$500</div>
+          <ul>
+            <li>Recognition at the event</li>
+            <li>Mention on socials &amp; website</li>
+            <li>10×10 booth</li>
+            <li>1 free car registration</li>
+            <li>Goody-bag promo items</li>
+          </ul>
+          <button type="button" class="btn btn--outline tier__cta" data-open-form data-level="Silver — $500">Choose Silver</button>
+        </div>
+        <div class="tier tier--copper">
+          <div class="tier__name"><span class="tier__gem">◆</span>Copper</div>
+          <div class="tier__price">$250</div>
+          <ul>
+            <li>Recognition at the event</li>
+            <li>Mention on social media</li>
+            <li>10×10 booth</li>
+            <li>Goody-bag promo items</li>
+          </ul>
+          <button type="button" class="btn btn--outline tier__cta" data-open-form data-level="Copper — $250">Choose Copper</button>
+        </div>
+      </div>
+      <div class="tiers__booth">
+        <div><b>Vendor Booth</b> — a 10×10 space to advertise, sell, or host an activity. <span class="muted">An Oro Valley Public Market License ($20/yr, prorated) is required for booths.</span></div>
+        <div class="tiers__boothprice">$50</div>
+      </div>
+    </div>
+
+    <div class="logowall reveal">
+      <div class="logowall__lead">Our valued sponsors</div>
+      <div class="logowall__grid">
+        <div class="logoslot"><span class="logoslot__tag">Venue Sponsor</span><img src="assets/sponsors/walmart.png" alt="Walmart — venue sponsor" loading="lazy" /></div>
+        <div class="logoslot"><img src="assets/sponsors/jim-click.png" alt="Jim Click Automotive Group" loading="lazy" /></div>
+        <div class="logoslot"><img src="assets/sponsors/oreilly.jpg" alt="O'Reilly Auto Parts" loading="lazy" /></div>
+        <div class="logoslot"><img src="assets/sponsors/big-rock-kw.png" alt="Big Rock Realty Group — Keller Williams Southern Arizona" loading="lazy" /></div>
+        <div class="logoslot"><img src="assets/sponsors/fairway.png" alt="Fairway Home Mortgage — Steve Lemmons" loading="lazy" /></div>
+        <div class="logoslot"><img src="assets/sponsors/catalina.png" alt="Catalina Towing &amp; Recovery" loading="lazy" /></div>
+        <div class="logoslot is-name">Open &amp; Shut Doors</div>
+        <a class="logoslot is-cta" data-open-form data-bind="sponsorHref" href="mailto:diamondsinthedesertcarshow@gmail.com">Become a sponsor →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section class="voices pad" id="voices">
+  <div class="container">
+    <div class="voices__head reveal">
+      <p class="eyebrow sec-eyebrow on-dark">From last year's show</p>
+      <h2>What they're <em>saying.</em></h2>
+    </div>
+    <div class="voices__grid">
+      <blockquote class="quote reveal">
+        <div class="quote__mark">&ldquo;</div>
+        <p>I've been showing cars for 20 years, and this is one of the best-organized events I've attended.</p>
+        <footer><b>John M.</b><span>Car show participant</span></footer>
+      </blockquote>
+      <blockquote class="quote reveal" data-d="1">
+        <div class="quote__mark">&ldquo;</div>
+        <p>We're proud to support Diamonds in the Desert. The professionalism these students demonstrate is remarkable.</p>
+        <footer><b>Dan Caldwell</b><span>Local sponsor</span></footer>
+      </blockquote>
+      <blockquote class="quote reveal" data-d="2">
+        <div class="quote__mark">&ldquo;</div>
+        <p>Working on this car show gave me confidence and hands-on experience that helped me land my first job.</p>
+        <footer><b>Sidney P.</b><span>CDO Auto student</span></footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GALLERY ===================== -->
+<section class="gallery pad" id="gallery">
+  <div class="container">
+    <div class="gallery__head reveal">
+      <div>
+        <p class="eyebrow sec-eyebrow">From the field</p>
+        <h2>Scenes from the show.</h2>
+      </div>
+      <p class="gallery__note">Aerial and ground views from show day at Oro Valley Marketplace.</p>
+    </div>
+    <div class="filmstrip reveal" data-d="1">
+      <div class="frame"><img src="assets/photos/show-01.jpg" alt="Aerial view of the show field with Pusch Ridge behind" loading="lazy" width="1200" height="675" /></div>
+      <div class="frame"><img src="assets/photos/show-02.jpg" alt="Rows of classic and custom cars from above" loading="lazy" width="1200" height="675" /></div>
+      <div class="frame"><img src="assets/photos/show-03.jpg" alt="Overhead view of the Diamonds in the Desert car show" loading="lazy" width="1200" height="675" /></div>
+      <div class="frame"><img src="assets/photos/show-04.jpg" alt="Cars lined across the Oro Valley Marketplace lot" loading="lazy" width="1200" height="675" /></div>
+      <div class="frame"><img src="assets/photos/show-05.jpg" alt="Exhibitors and vehicles on show day" loading="lazy" width="1200" height="675" /></div>
+      <div class="frame"><img src="assets/photos/show-06.jpg" alt="Vendors and attendees at the show" loading="lazy" width="1200" height="675" /></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="faq pad" id="faq">
+  <div class="container faq__grid">
+    <h2 class="reveal">Questions, <em>answered.</em></h2>
+    <div class="acc reveal" data-d="1">
+      <div class="acc__item">
+        <button class="acc__q" aria-expanded="false">When and where is the show?<span class="ic"></span></button>
+        <div class="acc__a"><p><strong><span data-bind="dateFull">Saturday, March 6, 2027</span></strong>, from <span data-bind="timeLine">10 AM–2 PM with awards at 3 PM</span>, at Oro Valley Marketplace (2150 E Tangerine Rd, in front of Walmart).</p></div>
+      </div>
+      <div class="acc__item">
+        <button class="acc__q" aria-expanded="false">How much is registration, and how do I sign up?<span class="ic"></span></button>
+        <div class="acc__a"><p><span data-bind="priceEarly">$25</span> early bird or <span data-bind="priceDay">$30</span> day-of (deadline <span data-bind="regDeadline">Feb 28, 2027</span>). Register online at <a data-bind="regHref" href="https://carshowpro.com/events/register/2820">CarShow Pro</a>.</p></div>
+      </div>
+      <div class="acc__item">
+        <button class="acc__q" aria-expanded="false">What kinds of cars are welcome?<span class="ic"></span></button>
+        <div class="acc__a"><p>All of them — all makes, models, and years. Classics, muscle, hot rods, imports, trucks, restomods, and works-in-progress. If you're proud of it, bring it.</p></div>
+      </div>
+      <div class="acc__item">
+        <button class="acc__q" aria-expanded="false">Can I come just to look?<span class="ic"></span></button>
+        <div class="acc__a"><p>Absolutely — spectators attend free. Come see the cars, meet the students, and support the program.</p></div>
+      </div>
+      <div class="acc__item">
+        <button class="acc__q" aria-expanded="false">Where does the money go?<span class="ic"></span></button>
+        <div class="acc__a"><p><strong>100% of proceeds</strong> go back into the CDO automotive program and are tax-deductible through CDO Auto Boosters.</p></div>
+      </div>
+      <div class="acc__item">
+        <button class="acc__q" aria-expanded="false">How can my business get involved?<span class="ic"></span></button>
+        <div class="acc__a"><p>We'd love to have you. Email <a data-bind="emailHref" href="mailto:diamondsinthedesertcarshow@gmail.com"><span data-bind="email">diamondsinthedesertcarshow@gmail.com</span></a> for the sponsorship packet and we'll match you to the right level.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FINAL CTA ===================== -->
+<section class="finalcta pad">
+  <div class="sweep2"></div>
+  <div class="container finalcta__in reveal">
+    <p class="eyebrow" data-bind="eyebrow">SATURDAY · MARCH 6, 2027 · ORO VALLEY, AZ</p>
+    <h2>Bring a car. Back a <em>future.</em></h2>
+    <p>One day under Pusch Ridge puts real tools in students' hands. Register, sponsor, or donate — and be part of it.</p>
+    <div class="finalcta__btns">
+      <a class="btn" data-bind="regHref" href="https://carshowpro.com/events/register/2820">Register Your Car <span class="arw">→</span></a>
+      <a class="btn btn--ghost" href="#support">Sponsor / Donate</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div>
+        <a href="#top" class="brand">
+          <span class="crest"><img src="assets/cdo-autos-logo.png" alt="CDO Autos logo" width="46" height="46" /></span>
+          <span class="brand__txt"><b>Diamonds in the Desert</b><small>CDO Autos · Oro Valley</small></span>
+        </a>
+        <p class="footer__blurb">A student-run car show benefiting the automotive program at Canyon del Oro High School. 100% of proceeds support CDO students.</p>
+        <div class="tax"><span class="tax__mark" aria-hidden="true">◆</span> <b>Tax-deductible:</b> Contributions are made through CDO Auto Boosters. <span data-bind="taxId">Ask for our tax ID when you give.</span></div>
+      </div>
+      <div>
+        <h4>The Show</h4>
+        <ul>
+          <li><a href="#cause">The Cause</a></li>
+          <li><a href="#details">Event Details</a></li>
+          <li><a href="#register">Register</a></li>
+          <li><a href="#support">Sponsor &amp; Donate</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a data-bind="regHref" href="https://carshowpro.com/events/register/2820">Register a Car</a></li>
+          <li><a data-bind="emailHref" href="mailto:diamondsinthedesertcarshow@gmail.com"><span data-bind="email">diamondsinthedesertcarshow@gmail.com</span></a></li>
+          <li><a data-bind="instaHref" href="https://instagram.com/diamondsinthedesertcarshow"><span data-bind="instaHandle">@diamondsinthedesertcarshow</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span data-bind="year">2027</span> Diamonds in the Desert · CDO Autos, Canyon del Oro High School · Oro Valley, AZ</span>
+      <span>Oro Valley Marketplace · 2150 E Tangerine Rd</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== SPONSOR FORM MODAL ===================== -->
+<div class="modal" id="sponsorModal" role="dialog" aria-modal="true" aria-labelledby="sponsorModalTitle" aria-hidden="true">
+  <div class="modal__backdrop" data-close-form></div>
+  <div class="modal__panel">
+    <button class="modal__close" type="button" data-close-form aria-label="Close form">&times;</button>
+    <p class="eyebrow sec-eyebrow" style="margin-bottom:.7rem">2027 Sponsorship</p>
+    <h3 id="sponsorModalTitle">Sponsor the <em>show.</em></h3>
+    <p class="modal__sub">Fill this out and we'll follow up with confirmation and payment details. 100% tax-deductible through CDO Auto Boosters.</p>
+    <form id="sponsorForm" novalidate>
+      <input type="hidden" name="_subject" value="New Diamonds in the Desert Sponsorship" />
+      <div class="field">
+        <label for="f_company">Company / business name <span class="req">*</span></label>
+        <input id="f_company" name="Company" required autocomplete="organization" />
+      </div>
+      <div class="field--row">
+        <div class="field"><label for="f_contact">Contact name <span class="req">*</span></label><input id="f_contact" name="Contact" required autocomplete="name" /></div>
+        <div class="field"><label for="f_phone">Phone <span class="req">*</span></label><input id="f_phone" name="Phone" type="tel" required autocomplete="tel" /></div>
+      </div>
+      <div class="field">
+        <label for="f_email">Email <span class="req">*</span></label>
+        <input id="f_email" name="Email" type="email" required autocomplete="email" />
+      </div>
+      <div class="field--row">
+        <div class="field"><label for="f_address">Address</label><input id="f_address" name="Address" autocomplete="street-address" /></div>
+        <div class="field"><label for="f_csz">City, State, ZIP</label><input id="f_csz" name="City_State_ZIP" /></div>
+      </div>
+      <div class="field--row">
+        <div class="field">
+          <label for="sponsorLevel">Sponsorship level <span class="req">*</span></label>
+          <select id="sponsorLevel" name="Level" required>
+            <option value="" disabled selected>Choose a level…</option>
+            <option>Diamond — $1,000</option>
+            <option>Gold — $750</option>
+            <option>Silver — $500</option>
+            <option>Copper — $250</option>
+            <option>Vendor Booth only — $50</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f_booth">Need booth space?</label>
+          <select id="f_booth" name="Booth"><option>Yes</option><option>No</option></select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="f_notes">Notes <span style="text-transform:none;letter-spacing:0;font-weight:400;color:var(--ink-500)">(business description for PA, logo / website link, questions)</span></label>
+        <textarea id="f_notes" name="Notes"></textarea>
+      </div>
+      <div class="field field--check">
+        <input type="checkbox" id="f_ack" name="Acknowledged" value="Yes" required />
+        <label for="f_ack">I agree to release Amphitheater Public Schools and CDO Auto Boosters from liability and to follow the event Code of Conduct.</label>
+      </div>
+      <div class="modal__actions">
+        <button type="submit" class="btn">Submit sponsorship <span class="arw">→</span></button>
+        <span class="modal__note">Payment by check to CDO Auto Boosters — we'll send details.</span>
+      </div>
+    </form>
+    <div class="form-success" id="formSuccess" hidden>
+      <div class="form-success__ic">◆</div>
+      <h3>Thank you!</h3>
+      <p id="formSuccessMsg">We've got your sponsorship request and will be in touch shortly.</p>
+      <button type="button" class="btn btn--outline" data-close-form>Close</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* =========================================================
+   ⚙️  SITE CONFIG  — EDIT THESE, THEY FILL THE WHOLE PAGE
+   All values below are the CONFIRMED 2027 event details.
+   ========================================================= */
+const CONFIG = {
+  eyebrow:     "SATURDAY · MARCH 6, 2027 · ORO VALLEY, AZ",
+  dateFull:    "Sat, March 6, 2027",
+  timeLine:    "10 AM – 2 PM · Awards at 3 PM",
+  priceEarly:  "$25",
+  priceDay:    "$30",
+  regDeadline: "Feb 28, 2027",
+  regHref:     "https://carshowpro.com/events/register/2820",
+  email:       "diamondsinthedesertcarshow@gmail.com",
+  emailHref:   "mailto:diamondsinthedesertcarshow@gmail.com",
+  sponsorHref: "mailto:diamondsinthedesertcarshow@gmail.com?subject=Diamonds%20in%20the%20Desert%20Sponsorship",
+  sponsorEmail: "diamondsinthedesertcarshow@gmail.com",
+  sponsorEmailHref: "mailto:diamondsinthedesertcarshow@gmail.com?subject=Diamonds%20in%20the%20Desert%20Sponsorship",
+  sponsorPhone: "(520) 696-5669",
+  // Paste a free Formspree endpoint here (e.g. "https://formspree.io/f/abcd1234") connected to the
+  // car show inbox for one-click online submissions. Left empty, the form opens the sponsor's email pre-filled.
+  formEndpoint: "",
+  donateHref:  "mailto:diamondsinthedesertcarshow@gmail.com?subject=Diamonds%20in%20the%20Desert%20Donation",
+  instaHandle: "@diamondsinthedesertcarshow",
+  instaHref:   "https://instagram.com/diamondsinthedesertcarshow",
+  taxId:       "Ask for our tax ID when you give.",   // ⚠ Optional: add the Boosters EIN if you want it shown
+  year:        "2027"
+};
+
+// Fill every [data-bind]: hrefs get the URL; text nodes get the value (preserving nested <small>).
+document.querySelectorAll("[data-bind]").forEach(el=>{
+  const key = el.getAttribute("data-bind");
+  if(CONFIG[key]===undefined) return;
+  if(el.hasAttribute("href")){ el.setAttribute("href",CONFIG[key]); return; }
+  const small = el.querySelector("small");
+  if(small){ el.childNodes[0].nodeValue = CONFIG[key] + " "; }   // keep the <small> sub-line
+  else { el.textContent = CONFIG[key]; }
+});
+// hero "When" sub-line (time) lives in its own <small>
+const heroTime = document.querySelector('.hero__fact [data-bind="timeLine"]');
+if(heroTime) heroTime.textContent = CONFIG.timeLine;
+
+/* Sticky nav */
+const nav=document.getElementById("nav");
+const onScroll=()=>nav.classList.toggle("scrolled",window.scrollY>40);
+onScroll();window.addEventListener("scroll",onScroll,{passive:true});
+
+/* Mobile menu */
+const toggle=document.getElementById("navToggle"),mobile=document.getElementById("mobile");
+const closeMenu=()=>{mobile.classList.remove("open");toggle.setAttribute("aria-expanded","false");document.body.style.overflow="";};
+toggle.addEventListener("click",()=>{const o=mobile.classList.toggle("open");toggle.setAttribute("aria-expanded",o);document.body.style.overflow=o?"hidden":"";});
+mobile.querySelectorAll("a").forEach(a=>a.addEventListener("click",closeMenu));
+
+/* Scroll reveals */
+const reveals=document.querySelectorAll(".reveal");
+if("IntersectionObserver" in window){
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});},{threshold:.12,rootMargin:"0px 0px -8% 0px"});
+  reveals.forEach(el=>io.observe(el));
+  // safety net: if anything is still hidden after load, reveal it
+  window.addEventListener("load",()=>setTimeout(()=>reveals.forEach(el=>el.classList.add("in")),1500));
+}else{ reveals.forEach(el=>el.classList.add("in")); }
+
+/* FAQ accordion */
+document.querySelectorAll(".acc__q").forEach(q=>{
+  q.addEventListener("click",()=>{
+    const item=q.parentElement,ans=item.querySelector(".acc__a");
+    const open=item.classList.toggle("open");
+    q.setAttribute("aria-expanded",open);
+    ans.style.maxHeight=open?ans.scrollHeight+"px":"0";
+  });
+});
+
+/* Sponsorship form modal */
+const modal=document.getElementById("sponsorModal");
+const sform=document.getElementById("sponsorForm");
+const fsuccess=document.getElementById("formSuccess");
+let lastFocus=null;
+function openForm(level){
+  if(level){const sel=document.getElementById("sponsorLevel");if(sel){[...sel.options].forEach(o=>{if(o.value===level)sel.value=level;});}}
+  fsuccess.hidden=true; sform.hidden=false;
+  modal.classList.add("open"); modal.setAttribute("aria-hidden","false");
+  document.body.style.overflow="hidden";
+  lastFocus=document.activeElement;
+  const first=sform.querySelector("input,select"); if(first) setTimeout(()=>first.focus(),60);
+}
+function closeForm(){
+  modal.classList.remove("open"); modal.setAttribute("aria-hidden","true");
+  document.body.style.overflow="";
+  if(lastFocus&&lastFocus.focus) lastFocus.focus();
+}
+document.querySelectorAll("[data-open-form]").forEach(el=>el.addEventListener("click",e=>{e.preventDefault();openForm(el.dataset.level||"");}));
+document.querySelectorAll("[data-close-form]").forEach(el=>el.addEventListener("click",closeForm));
+document.addEventListener("keydown",e=>{
+  if(!modal.classList.contains("open")) return;
+  if(e.key==="Escape"){ closeForm(); return; }
+  if(e.key==="Tab"){
+    const list=[...modal.querySelectorAll('a[href],button,input,select,textarea')].filter(x=>!x.disabled&&x.offsetParent!==null);
+    if(!list.length) return;
+    const first=list[0], last=list[list.length-1];
+    if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
+    else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
+  }
+});
+sform.addEventListener("submit",async e=>{
+  e.preventDefault();
+  if(!sform.reportValidity()) return;
+  const data=new FormData(sform);
+  const finish=(viaEmail)=>{
+    sform.hidden=true; fsuccess.hidden=false;
+    document.getElementById("formSuccessMsg").textContent = viaEmail
+      ? "Your email app should open with your details filled in — just press send to finish. If it didn't, email us at "+CONFIG.email+"."
+      : "We've got your sponsorship request and will be in touch shortly with confirmation and payment details.";
+  };
+  const endpoint=CONFIG.formEndpoint;
+  if(endpoint&&/^https?:\/\//.test(endpoint)){
+    try{
+      const res=await fetch(endpoint,{method:"POST",body:data,headers:{"Accept":"application/json"}});
+      if(res.ok){ sform.reset(); finish(false); return; }
+      throw new Error("submit failed");
+    }catch(_){ /* fall through to email */ }
+  }
+  const lines=[];
+  for(const [k,v] of data.entries()){ if(k[0]!=="_"&&v) lines.push(k.replace(/_/g," ")+": "+v); }
+  const company=data.get("Company")||"";
+  window.location.href="mailto:"+CONFIG.email+"?subject="+encodeURIComponent("Sponsorship — "+company)+"&body="+encodeURIComponent("New sponsorship request:\n\n"+lines.join("\n"));
+  finish(true);
+});
+</script>
+</body>
+</html>
