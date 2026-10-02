@@ -351,6 +351,18 @@ section{position:relative}
 .tiers__boothprice{font-family:var(--font-display);font-weight:900;font-size:2.2rem;color:var(--gold-400);flex:none;line-height:1}
 .tier__cta{margin-top:1.4rem;width:100%;justify-content:center;font-size:.9rem}
 
+/* ========== PAYMENTS ========== */
+[hidden]{display:none!important}
+.tiers{scroll-margin-top:90px}
+.tiers__boothbuy{display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap}
+.tiers__note{margin-top:1.2rem;font-size:.88rem;color:var(--ink-500);max-width:72ch;line-height:1.6}
+.tiers__note a{color:var(--gold-600);font-weight:600;border-bottom:1px solid rgba(168,134,29,.4)}
+.secure{text-align:center;font-size:.76rem;letter-spacing:.04em;color:var(--green-100);margin-top:.7rem}
+.giveways{list-style:none;display:grid;gap:.9rem;margin-top:1.4rem;padding-top:1.2rem;border-top:1px solid rgba(230,239,234,.14);font-size:.88rem;color:var(--green-100);line-height:1.45}
+.giveways .k{display:block;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-400);font-weight:700;margin-bottom:.2rem}
+.giveways b{color:#fff}
+.giveways a{color:var(--gold-400);border-bottom:1px solid rgba(217,184,74,.4)}
+
 /* ========== SPONSOR FORM MODAL ========== */
 .modal{position:fixed;inset:0;z-index:200;display:none;align-items:flex-start;justify-content:center;padding:clamp(.75rem,4vw,3rem) .75rem;overflow-y:auto}
 .modal.open{display:flex}
@@ -427,7 +439,7 @@ section{position:relative}
     <a href="#register">Register</a>
     <a href="#support">Sponsor</a>
     <a href="#faq">FAQ</a>
-    <a class="btn" data-bind="regHref" href="https://carshowpro.com/events/register/2820">Register a Car <span class="arw">→</span></a>
+    <a class="btn" data-bind="regHref" href="https://carshowpro.com/events/view/3444">Register a Car <span class="arw">→</span></a>
   </div>
   <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
 </nav>
@@ -438,7 +450,7 @@ section{position:relative}
   <a href="#register"><span class="num">03</span>Register</a>
   <a href="#support"><span class="num">04</span>Sponsor &amp; Donate</a>
   <a href="#faq"><span class="num">05</span>FAQ</a>
-  <a class="btn" data-bind="regHref" href="https://carshowpro.com/events/register/2820">Register a Car <span class="arw">→</span></a>
+  <a class="btn" data-bind="regHref" href="https://carshowpro.com/events/view/3444">Register a Car <span class="arw">→</span></a>
 </div>
 
 <!-- ===================== HERO ===================== -->
@@ -454,12 +466,12 @@ section{position:relative}
     </h1>
     <p class="hero__sub">A student-run classic &amp; custom car show under Pusch Ridge — where the automotive students of Canyon del Oro High School turn horsepower into hands-on careers.</p>
     <div class="hero__cta">
-      <a class="btn" data-bind="regHref" href="https://carshowpro.com/events/register/2820">Register Your Car <span class="arw">→</span></a>
+      <a class="btn" data-bind="regHref" href="https://carshowpro.com/events/view/3444">Register Your Car <span class="arw">→</span></a>
       <a class="btn btn--ghost" href="#support">Sponsor or Donate</a>
     </div>
     <div class="hero__facts">
-      <div class="hero__fact"><span class="k">When</span><span class="v" data-bind="dateFull">Sat, March 6, 2027<small data-bind="timeLine">10 AM – 2 PM · Awards 3 PM</small></span></div>
-      <div class="hero__fact"><span class="k">Where</span><span class="v">Oro Valley Marketplace<small>2150 E Tangerine Rd</small></span></div>
+      <div class="hero__fact"><span class="k">When</span><span class="v" data-bind="dateFull">Sat, March 6, 2027<small data-bind="timeLine">10 AM – 2 PM · Awards at 1:30 PM</small></span></div>
+      <div class="hero__fact"><span class="k">Where</span><span class="v">Oro Valley Marketplace<small>12155 N. Oracle Rd</small></span></div>
       <div class="hero__fact"><span class="k">Register</span><span class="v" data-bind="priceEarly">$25<small>Early bird · all makes</small></span></div>
       <div class="hero__fact"><span class="k">Benefiting</span><span class="v">CDO Automotive<small>100% to students</small></span></div>
     </div>
@@ -504,18 +516,18 @@ section{position:relative}
         <p class="eyebrow sec-eyebrow on-dark">The field guide</p>
         <h2>Show day, <em>at a glance.</em></h2>
       </div>
-      <a class="btn btn--ghost" data-bind="regHref" href="https://carshowpro.com/events/register/2820">See classes &amp; register <span class="arw">→</span></a>
+      <a class="btn btn--ghost" data-bind="regHref" href="https://carshowpro.com/events/view/3444">See classes &amp; register <span class="arw">→</span></a>
     </div>
     <div class="details__grid">
       <div class="dcard reveal">
         <span class="n">01 · Date &amp; time</span>
         <h3 data-bind="dateFull">Sat, March 6, 2027</h3>
-        <p data-bind="timeLine">10 AM – 2 PM · Awards ceremony at 3 PM</p>
+        <p>Check-in 8:30–10 AM · Show 10 AM – 2 PM · Awards at 1:30 PM</p>
       </div>
       <div class="dcard reveal" data-d="1">
         <span class="n">02 · Location</span>
         <h3>Oro Valley Marketplace</h3>
-        <p>2150 E Tangerine Rd, Oro Valley, AZ — in the lot in front of Walmart, under Pusch Ridge.</p>
+        <p>12155 N. Oracle Rd, Oro Valley, AZ 85737 — the Walmart lot at Oro Valley Marketplace, under Pusch Ridge.</p>
       </div>
       <div class="dcard reveal" data-d="2">
         <span class="n">03 · Who shows</span>
@@ -524,18 +536,18 @@ section{position:relative}
       </div>
       <div class="dcard reveal" data-d="3">
         <span class="n">04 · Awards</span>
-        <h3>Dozens of classes</h3>
-        <p>Vehicles are judged across dozens of classes, with trophies at the 3 PM ceremony. Full class list on the registration page.</p>
+        <h3>First place in every class</h3>
+        <p>Plus People's Choice, Student's Choice, and Sponsor's Choice — all presented at 1:30 PM. Full class list on CarShow Pro.</p>
       </div>
     </div>
     <!-- schedule timeline -->
     <div class="timeline reveal">
       <div class="timeline__lead">Day-of schedule</div>
       <div class="timeline__row">
-        <div class="tstop"><div class="t">10:00 AM</div><div class="d">Gates open &amp; roll-in</div></div>
-        <div class="tstop"><div class="t">Midday</div><div class="d">Show floor open</div></div>
-        <div class="tstop"><div class="t">2:00 PM</div><div class="d">Show wraps</div></div>
-        <div class="tstop is-award"><div class="t">3:00 PM</div><div class="d">Awards ceremony</div></div>
+        <div class="tstop"><div class="t">8:30 AM</div><div class="d">Check-in &amp; roll-in</div></div>
+        <div class="tstop"><div class="t">10:00 AM</div><div class="d">Show opens · live DJ, vendors &amp; raffles</div></div>
+        <div class="tstop is-award"><div class="t">1:30 PM</div><div class="d">Awards ceremony</div></div>
+        <div class="tstop"><div class="t">2:00 PM</div><div class="d">50/50 drawing &amp; show wraps</div></div>
       </div>
     </div>
   </div>
@@ -552,9 +564,11 @@ section{position:relative}
         <span class="chip">All makes, models &amp; years</span>
         <span class="chip">Deadline: <b data-bind="regDeadline">Feb 28, 2027</b></span>
         <span class="chip">100% benefits students</span>
+        <span class="chip">Dash plaques: first <b>100</b> cars</span>
+        <span class="chip">Goodie bags: first <b>150</b> cars</span>
       </div>
       <div class="register__cta">
-        <a class="btn" data-bind="regHref" href="https://carshowpro.com/events/register/2820">Register on CarShow Pro <span class="arw">→</span></a>
+        <a class="btn" data-bind="regHref" href="https://carshowpro.com/events/view/3444">Register on CarShow Pro <span class="arw">→</span></a>
       </div>
     </div>
     <div class="reveal" data-d="1">
@@ -571,7 +585,7 @@ section{position:relative}
           <p class="note">Same-day registration at the gate, space permitting.</p>
         </div>
       </div>
-      <p class="register__deadline" style="margin-top:1.2rem">Spectators welcome — <b>free to attend.</b> Bring the family and support the program.</p>
+      <p class="register__deadline" style="margin-top:1.2rem">Spectators welcome — bring the family, enjoy the live DJ, and support the program.</p>
     </div>
   </div>
 </section>
@@ -619,26 +633,25 @@ section{position:relative}
           <li><span class="tick">◆</span><span><b>Tax-deductible</b> — every dollar runs through CDO Auto Boosters.</span></li>
         </ul>
         <div class="support__cta">
-          <a class="btn" data-open-form data-bind="sponsorHref" href="mailto:diamondsinthedesertcarshow@gmail.com">Become a sponsor <span class="arw">→</span></a>
+          <a class="btn" href="#tiers">Choose your level <span class="arw">↓</span></a>
         </div>
-        <p class="support__contact">Questions? Email <a data-bind="sponsorEmailHref" href="mailto:diamondsinthedesertcarshow@gmail.com"><span data-bind="sponsorEmail">diamondsinthedesertcarshow@gmail.com</span></a> or call <b>Jeremy Tarbet</b>, CDO Automotive Instructor, at <span data-bind="sponsorPhone">(520) 696-5669</span>.</p>
+        <p class="support__contact">Questions about sponsorships or payments? Email <a data-bind="sponsorEmailHref" href="mailto:diamondsinthedesertcarshow@gmail.com"><span data-bind="sponsorEmail">diamondsinthedesertcarshow@gmail.com</span></a> or call <b>Jess</b>, our Treasurer, at <a data-bind="sponsorPhoneHref" href="tel:+15202701419"><span data-bind="sponsorPhone">(520) 270-1419</span></a>.</p>
       </div>
       <aside class="support__aside reveal" data-d="1">
         <h3>Can't make it? Give.</h3>
-        <p>A tax-deductible donation through CDO Auto Boosters goes directly to the students. Every amount makes a difference.</p>
-        <div class="donate-amt">
-          <a data-bind="donateHref" href="mailto:diamondsinthedesertcarshow@gmail.com?subject=Donation">$25</a>
-          <a data-bind="donateHref" href="mailto:diamondsinthedesertcarshow@gmail.com?subject=Donation">$50</a>
-          <a data-bind="donateHref" href="mailto:diamondsinthedesertcarshow@gmail.com?subject=Donation">$100</a>
-          <a data-bind="donateHref" href="mailto:diamondsinthedesertcarshow@gmail.com?subject=Donation">Other</a>
-        </div>
-        <a class="btn btn--ghost" data-bind="donateHref" href="mailto:diamondsinthedesertcarshow@gmail.com?subject=Donation" style="width:100%;justify-content:center">Make a donation <span class="arw">→</span></a>
-        <p class="support__mailcheck">Prefer to mail a check? <b>CDO Auto Boosters</b>, 25 Calle Concordia, Tucson, AZ 85704. Raffle-prize donations are welcome, too.</p>
+        <p>A tax-deductible donation through CDO Auto Boosters goes straight to the students. Give any amount online in about a minute.</p>
+        <a class="btn" data-pay="payDonate" data-bind="donateHref" href="mailto:diamondsinthedesertcarshow@gmail.com?subject=Donation" style="width:100%;justify-content:center">Donate online <span class="arw">→</span></a>
+        <div class="secure" data-show-if="payDonate">Secure checkout by Square</div>
+        <ul class="giveways">
+          <li data-show-if="zelle"><span class="k">Zelle · no fees</span>Send to <b data-bind="zelle">CDO Auto Boosters</b> from your bank's app.</li>
+          <li><span class="k">Check</span>Payable to <b>CDO Auto Boosters</b>, 25 Calle Concordia, Tucson, AZ 85704.</li>
+          <li><span class="k">Raffle prizes</span>Donated items are welcome — <a data-bind="emailHref" href="mailto:diamondsinthedesertcarshow@gmail.com">email us</a>.</li>
+        </ul>
       </aside>
     </div>
 
     <!-- SPONSORSHIP TIERS -->
-    <div class="tiers reveal">
+    <div class="tiers reveal" id="tiers">
       <p class="tiers__lead">Sponsorship levels</p>
       <h3 class="tiers__title">Pick your <em>tier.</em></h3>
       <div class="tiers__grid">
@@ -655,7 +668,7 @@ section{position:relative}
             <li>3 free car registrations</li>
             <li>Goody-bag promo items</li>
           </ul>
-          <button type="button" class="btn tier__cta" data-open-form data-level="Diamond — $1,000">Choose Diamond</button>
+          <a class="btn tier__cta" data-pay="payDiamond" data-open-form data-level="Diamond — $1,000" href="#tiers">Sponsor now <span class="arw">→</span></a>
         </div>
         <div class="tier tier--gold">
           <div class="tier__name"><span class="tier__gem">◆</span>Gold</div>
@@ -668,7 +681,7 @@ section{position:relative}
             <li>2 free car registrations</li>
             <li>Goody-bag promo items</li>
           </ul>
-          <button type="button" class="btn btn--outline tier__cta" data-open-form data-level="Gold — $750">Choose Gold</button>
+          <a class="btn btn--outline tier__cta" data-pay="payGold" data-open-form data-level="Gold — $750" href="#tiers">Sponsor now <span class="arw">→</span></a>
         </div>
         <div class="tier tier--silver">
           <div class="tier__name"><span class="tier__gem">◆</span>Silver</div>
@@ -680,7 +693,7 @@ section{position:relative}
             <li>1 free car registration</li>
             <li>Goody-bag promo items</li>
           </ul>
-          <button type="button" class="btn btn--outline tier__cta" data-open-form data-level="Silver — $500">Choose Silver</button>
+          <a class="btn btn--outline tier__cta" data-pay="paySilver" data-open-form data-level="Silver — $500" href="#tiers">Sponsor now <span class="arw">→</span></a>
         </div>
         <div class="tier tier--copper">
           <div class="tier__name"><span class="tier__gem">◆</span>Copper</div>
@@ -691,13 +704,17 @@ section{position:relative}
             <li>10×10 booth</li>
             <li>Goody-bag promo items</li>
           </ul>
-          <button type="button" class="btn btn--outline tier__cta" data-open-form data-level="Copper — $250">Choose Copper</button>
+          <a class="btn btn--outline tier__cta" data-pay="payCopper" data-open-form data-level="Copper — $250" href="#tiers">Sponsor now <span class="arw">→</span></a>
         </div>
       </div>
       <div class="tiers__booth">
         <div><b>Vendor Booth</b> — a 10×10 space to advertise, sell, or host an activity. <span class="muted">An Oro Valley Public Market License ($20/yr, prorated) is required for booths.</span></div>
-        <div class="tiers__boothprice">$50</div>
+        <div class="tiers__boothbuy">
+          <div class="tiers__boothprice">$50</div>
+          <a class="btn" data-pay="payBooth" data-open-form data-level="Vendor Booth only — $50" href="#tiers">Reserve a booth <span class="arw">→</span></a>
+        </div>
       </div>
+      <p class="tiers__note"><span data-show-if="payDiamond">Checkout is handled securely by Square. </span>Prefer Zelle or a check, or need an invoice? <a data-open-form href="#tiers">Send us your details</a> and we'll take care of it. After you sponsor, email your logo and a one-line business description to <a data-bind="sponsorEmailHref" href="mailto:diamondsinthedesertcarshow@gmail.com"><span data-bind="sponsorEmail">diamondsinthedesertcarshow@gmail.com</span></a> so we can feature you.</p>
     </div>
 
     <div class="logowall reveal">
@@ -710,7 +727,7 @@ section{position:relative}
         <div class="logoslot"><img src="fairway.png" alt="Fairway Home Mortgage — Steve Lemmons" loading="lazy" /></div>
         <div class="logoslot"><img src="catalina.png" alt="Catalina Towing &amp; Recovery" loading="lazy" /></div>
         <div class="logoslot is-name">Open &amp; Shut Doors</div>
-        <a class="logoslot is-cta" data-open-form data-bind="sponsorHref" href="mailto:diamondsinthedesertcarshow@gmail.com">Become a sponsor →</a>
+        <a class="logoslot is-cta" href="#tiers">Become a sponsor →</a>
       </div>
     </div>
   </div>
@@ -771,11 +788,11 @@ section{position:relative}
     <div class="acc reveal" data-d="1">
       <div class="acc__item">
         <button class="acc__q" aria-expanded="false">When and where is the show?<span class="ic"></span></button>
-        <div class="acc__a"><p><strong><span data-bind="dateFull">Saturday, March 6, 2027</span></strong>, from <span data-bind="timeLine">10 AM–2 PM with awards at 3 PM</span>, at Oro Valley Marketplace (2150 E Tangerine Rd, in front of Walmart).</p></div>
+        <div class="acc__a"><p><strong><span data-bind="dateFull">Saturday, March 6, 2027</span></strong>, from 10 AM to 2 PM (check-in 8:30–10 AM, awards at 1:30 PM), in the Walmart lot at Oro Valley Marketplace, 12155 N. Oracle Rd.</p></div>
       </div>
       <div class="acc__item">
         <button class="acc__q" aria-expanded="false">How much is registration, and how do I sign up?<span class="ic"></span></button>
-        <div class="acc__a"><p><span data-bind="priceEarly">$25</span> early bird or <span data-bind="priceDay">$30</span> day-of (deadline <span data-bind="regDeadline">Feb 28, 2027</span>). Register online at <a data-bind="regHref" href="https://carshowpro.com/events/register/2820">CarShow Pro</a>.</p></div>
+        <div class="acc__a"><p><span data-bind="priceEarly">$25</span> early bird or <span data-bind="priceDay">$30</span> day-of (deadline <span data-bind="regDeadline">Feb 28, 2027</span>). Register online at <a data-bind="regHref" href="https://carshowpro.com/events/view/3444">CarShow Pro</a>.</p></div>
       </div>
       <div class="acc__item">
         <button class="acc__q" aria-expanded="false">What kinds of cars are welcome?<span class="ic"></span></button>
@@ -791,7 +808,7 @@ section{position:relative}
       </div>
       <div class="acc__item">
         <button class="acc__q" aria-expanded="false">How can my business get involved?<span class="ic"></span></button>
-        <div class="acc__a"><p>We'd love to have you. Email <a data-bind="emailHref" href="mailto:diamondsinthedesertcarshow@gmail.com"><span data-bind="email">diamondsinthedesertcarshow@gmail.com</span></a> for the sponsorship packet and we'll match you to the right level.</p></div>
+        <div class="acc__a"><p>Pick a level in the <a href="#tiers">sponsorship section</a> and check out online in a couple of minutes. Rather pay by Zelle or check, or need an invoice? Email <a data-bind="emailHref" href="mailto:diamondsinthedesertcarshow@gmail.com"><span data-bind="email">diamondsinthedesertcarshow@gmail.com</span></a> and we'll sort it out.</p></div>
       </div>
     </div>
   </div>
@@ -805,7 +822,7 @@ section{position:relative}
     <h2>Bring a car. Back a <em>future.</em></h2>
     <p>One day under Pusch Ridge puts real tools in students' hands. Register, sponsor, or donate — and be part of it.</p>
     <div class="finalcta__btns">
-      <a class="btn" data-bind="regHref" href="https://carshowpro.com/events/register/2820">Register Your Car <span class="arw">→</span></a>
+      <a class="btn" data-bind="regHref" href="https://carshowpro.com/events/view/3444">Register Your Car <span class="arw">→</span></a>
       <a class="btn btn--ghost" href="#support">Sponsor / Donate</a>
     </div>
   </div>
@@ -836,7 +853,7 @@ section{position:relative}
       <div>
         <h4>Connect</h4>
         <ul>
-          <li><a data-bind="regHref" href="https://carshowpro.com/events/register/2820">Register a Car</a></li>
+          <li><a data-bind="regHref" href="https://carshowpro.com/events/view/3444">Register a Car</a></li>
           <li><a data-bind="emailHref" href="mailto:diamondsinthedesertcarshow@gmail.com"><span data-bind="email">diamondsinthedesertcarshow@gmail.com</span></a></li>
           <li><a data-bind="instaHref" href="https://instagram.com/diamondsinthedesertcarshow"><span data-bind="instaHandle">@diamondsinthedesertcarshow</span></a></li>
         </ul>
@@ -844,7 +861,7 @@ section{position:relative}
     </div>
     <div class="footer__bottom">
       <span>© <span data-bind="year">2027</span> Diamonds in the Desert · CDO Autos, Canyon del Oro High School · Oro Valley, AZ</span>
-      <span>Oro Valley Marketplace · 2150 E Tangerine Rd</span>
+      <span>Oro Valley Marketplace · 12155 N. Oracle Rd, Oro Valley, AZ 85737</span>
     </div>
   </div>
 </footer>
@@ -922,21 +939,35 @@ section{position:relative}
 const CONFIG = {
   eyebrow:     "SATURDAY · MARCH 6, 2027 · ORO VALLEY, AZ",
   dateFull:    "Sat, March 6, 2027",
-  timeLine:    "10 AM – 2 PM · Awards at 3 PM",
+  timeLine:    "10 AM – 2 PM · Awards at 1:30 PM",
   priceEarly:  "$25",
   priceDay:    "$30",
   regDeadline: "Feb 28, 2027",
-  regHref:     "https://carshowpro.com/events/register/2820",
+  regHref:     "https://carshowpro.com/events/view/3444",
   email:       "diamondsinthedesertcarshow@gmail.com",
   emailHref:   "mailto:diamondsinthedesertcarshow@gmail.com",
   sponsorHref: "mailto:diamondsinthedesertcarshow@gmail.com?subject=Diamonds%20in%20the%20Desert%20Sponsorship",
   sponsorEmail: "diamondsinthedesertcarshow@gmail.com",
   sponsorEmailHref: "mailto:diamondsinthedesertcarshow@gmail.com?subject=Diamonds%20in%20the%20Desert%20Sponsorship",
-  sponsorPhone: "(520) 696-5669",
+  sponsorPhone: "(520) 270-1419",
+  sponsorPhoneHref: "tel:+15202701419",
   // Paste a free Formspree endpoint here (e.g. "https://formspree.io/f/abcd1234") connected to the
   // car show inbox for one-click online submissions. Left empty, the form opens the sponsor's email pre-filled.
   formEndpoint: "",
   donateHref:  "mailto:diamondsinthedesertcarshow@gmail.com?subject=Diamonds%20in%20the%20Desert%20Donation",
+
+  // ── PAYMENTS (Square) ─────────────────────────────────────────────
+  // Paste each Square payment link between the quotes (Square Dashboard → Payment Links).
+  // Any link left blank falls back to the sponsor form / email, so nothing is ever a dead button.
+  payDiamond:  "https://square.link/u/6dJyggGM",   // $1,000 Diamond sponsorship
+  payGold:     "https://square.link/u/SahUIl4R",   // $750 Gold sponsorship
+  paySilver:   "https://square.link/u/u555ei38",   // $500 Silver sponsorship
+  payCopper:   "https://square.link/u/z3nzjxYF",   // $250 Copper sponsorship
+  payBooth:    "https://square.link/u/cPpDLFCd",   // $50 vendor booth
+  payDonate:   "https://square.link/u/LxSvHpxP",   // donation — buyer chooses the amount
+  // Boosters' Zelle email or phone. Shown as a no-fee option (Zelle can't take payments on a website).
+  zelle:       "",
+
   instaHandle: "@diamondsinthedesertcarshow",
   instaHref:   "https://instagram.com/diamondsinthedesertcarshow",
   taxId:       "Ask for our tax ID when you give.",   // ⚠ Optional: add the Boosters EIN if you want it shown
@@ -946,7 +977,7 @@ const CONFIG = {
 // Fill every [data-bind]: hrefs get the URL; text nodes get the value (preserving nested <small>).
 document.querySelectorAll("[data-bind]").forEach(el=>{
   const key = el.getAttribute("data-bind");
-  if(CONFIG[key]===undefined) return;
+  if(CONFIG[key]===undefined||CONFIG[key]==="") return;   // blank = keep the fallback in the HTML
   if(el.hasAttribute("href")){ el.setAttribute("href",CONFIG[key]); return; }
   const small = el.querySelector("small");
   if(small){ el.childNodes[0].nodeValue = CONFIG[key] + " "; }   // keep the <small> sub-line
@@ -955,6 +986,19 @@ document.querySelectorAll("[data-bind]").forEach(el=>{
 // hero "When" sub-line (time) lives in its own <small>
 const heroTime = document.querySelector('.hero__fact [data-bind="timeLine"]');
 if(heroTime) heroTime.textContent = CONFIG.timeLine;
+
+/* Payments: buttons with a Square link go straight to checkout (new tab).
+   Without one they keep their fallback (sponsor form or email). Runs before the
+   form listeners attach, so a paid button never opens the form. */
+document.querySelectorAll("[data-pay]").forEach(el=>{
+  const url=CONFIG[el.dataset.pay];
+  if(!url) return;
+  el.setAttribute("href",url);
+  el.setAttribute("target","_blank");
+  el.setAttribute("rel","noopener");
+  el.removeAttribute("data-open-form");
+});
+document.querySelectorAll("[data-show-if]").forEach(el=>{ if(!CONFIG[el.dataset.showIf]) el.hidden=true; });
 
 /* Sticky nav */
 const nav=document.getElementById("nav");
