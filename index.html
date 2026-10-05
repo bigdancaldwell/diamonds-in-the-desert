@@ -229,17 +229,6 @@ section{position:relative}
 .support__aside .donate-amt{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.4rem}
 .support__aside .donate-amt a{border:1px solid rgba(217,184,74,.4);color:var(--gold-400);border-radius:2px;padding:.5rem .9rem;font-weight:700;font-size:.9rem;transition:background .2s,color .2s}
 .support__aside .donate-amt a:hover{background:var(--gold-500);color:var(--green-900);border-color:var(--gold-500)}
-.logowall{margin-top:clamp(2.6rem,5vw,4rem)}
-.logowall__lead{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-600);font-weight:700;margin-bottom:1.2rem;display:flex;align-items:center;gap:.8rem}
-.logowall__lead::before{content:"";width:34px;height:1px;background:var(--gold-600)}
-.logowall__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:rgba(18,61,43,.12);border:1px solid rgba(18,61,43,.12)}
-.logoslot{position:relative;min-height:clamp(122px,13vw,160px);background:#fff;display:grid;place-items:center;padding:1.1rem;color:var(--ink-500);font-weight:600;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;transition:background .3s,color .3s}
-.logoslot img{max-width:76%;max-height:80px;object-fit:contain}
-.logoslot.is-name{font-family:var(--font-display);color:var(--green-800);font-weight:600;font-size:clamp(1rem,1.6vw,1.2rem);letter-spacing:-.01em;text-transform:none;line-height:1.15;text-align:center}
-.logoslot.is-open{opacity:.5}
-.logoslot.is-cta{color:var(--gold-600);text-transform:none;letter-spacing:0;font-size:.9rem;font-weight:700}
-.logoslot.is-cta:hover{background:var(--green-100)}
-.logoslot__tag{position:absolute;top:8px;left:8px;background:var(--gold-500);color:var(--green-900);font-family:var(--font-body);font-size:.56rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .5rem;border-radius:2px}
 
 /* ========== GALLERY ========== */
 .gallery{background:var(--sand-100)}
@@ -384,11 +373,74 @@ section{position:relative}
 .field--check input{width:auto;flex:none;margin-top:.2rem;accent-color:var(--green-700)}
 .field--check label{text-transform:none;letter-spacing:0;font-weight:400;font-size:.85rem;color:var(--ink-500);line-height:1.4}
 .modal__actions{display:flex;gap:1rem 1.2rem;align-items:center;margin-top:1.5rem;flex-wrap:wrap}
-.modal__note{font-size:.8rem;color:var(--ink-500);max-width:30ch}
+.modal__note{font-size:.8rem;color:var(--ink-500);max-width:38ch}
+.modal__note a,.field--check label a{color:var(--gold-600);font-weight:600;border-bottom:1px solid rgba(168,134,29,.4)}
 .form-success{text-align:center;padding:1.5rem .5rem}
 .form-success__ic{width:58px;height:58px;margin:0 auto 1.1rem;border-radius:50%;background:var(--gold-500);color:var(--green-900);display:grid;place-items:center;font-size:1.5rem}
 .form-success h3{color:var(--green-900);margin-bottom:.6rem}
 .form-success p{color:var(--ink-500);max-width:42ch;margin:0 auto 1.5rem}
+
+/* ========== TIER LADDER + SPONSOR SHOWCASE ========== */
+.tier__inc{font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--gold-600);margin:-.5rem 0 .75rem}
+.tiers__compare{margin-top:1.1rem;font-size:.92rem;color:var(--green-800);font-weight:600}
+.tiers__booth a{color:var(--gold-400);border-bottom:1px solid rgba(217,184,74,.45);white-space:nowrap}
+.showcase{margin-top:clamp(3.2rem,6vw,5rem);scroll-margin-top:90px}
+.showcase__venue{display:flex;align-items:center;gap:1.2rem 1.6rem;flex-wrap:wrap;background:#fff;border:1px solid rgba(18,61,43,.12);border-radius:3px;padding:1.1rem 1.4rem;margin-bottom:.4rem}
+.showcase__venue img{height:68px;width:auto}
+.srow--preview .srow__grid{display:flex;align-items:flex-end;gap:1rem;flex-wrap:wrap}
+.srow--preview .scard{flex:1 1 0;min-width:0}
+.srow--preview .slot-diamond{flex-grow:4;min-height:180px;font-size:1.15rem}
+.srow--preview .slot-gold{flex-grow:3;min-height:136px}
+.srow--preview .slot-silver{flex-grow:2;min-height:100px;font-size:.88rem}
+.srow--preview .slot-copper{flex-grow:1.5;min-height:72px;font-size:.82rem}
+@media(max-width:600px){.srow--preview .scard{flex-basis:calc(50% - .5rem)}}
+.showcase__venue p{color:var(--ink-500);font-size:.9rem;margin:0}
+.vtag{background:var(--gold-500);color:var(--green-900);font-size:.6rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:.3rem .6rem;border-radius:2px}
+.srow{margin-top:1.6rem}
+.srow__label{display:flex;align-items:center;gap:.55rem;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;font-weight:800;color:var(--ink-500);margin:0 0 .7rem}
+.srow__label .gem{font-size:.8rem;color:var(--gold-500)}
+.srow--silver .srow__label .gem{color:#9aa3a2}
+.srow--copper .srow__label .gem{color:#b5793f}
+.srow__grid{display:grid;gap:1rem}
+.srow--diamond .srow__grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr))}
+.srow--gold .srow__grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr))}
+.srow--silver .srow__grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+.scard{background:#fff;border:1px solid rgba(18,61,43,.12);border-radius:3px;display:grid;place-items:center;align-content:center;padding:1rem;text-align:center;color:var(--green-800);font-family:var(--font-display);font-weight:600;transition:transform .2s var(--ease),border-color .2s var(--ease)}
+.scard img{max-width:82%;object-fit:contain}
+.srow--diamond .scard{min-height:180px}.srow--diamond .scard img{max-height:118px}
+.srow--gold .scard{min-height:132px}.srow--gold .scard img{max-height:78px}
+.srow--silver .scard{min-height:96px}.srow--silver .scard img{max-height:50px}
+a.scard:hover{border-color:var(--gold-500);transform:translateY(-2px)}
+.scard.is-open{background:transparent;border:1.5px dashed rgba(168,134,29,.55);color:var(--gold-600);font-family:var(--font-body);font-weight:700;font-size:.95rem}
+.scard.is-open small{display:block;font-weight:500;color:var(--ink-500);font-size:.78rem;margin-top:.3rem}
+.srow--diamond .scard.is-open{font-size:1.15rem}
+.copper-names{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;font-family:var(--font-display);font-weight:600;color:var(--green-800);font-size:1.02rem}
+.copper-names a.open{font-family:var(--font-body);font-size:.9rem;font-weight:700;color:var(--gold-600);border-bottom:1px dashed rgba(168,134,29,.6)}
+.past{margin-top:2.4rem;padding-top:1.5rem;border-top:1px solid rgba(18,61,43,.12)}
+.past__grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:.7rem}
+.past .scard{min-height:84px;font-size:.9rem}
+.past .scard img{max-height:46px}
+
+/* ========== TWO-STEP FORMS ========== */
+.steps{display:flex;align-items:center;gap:.6rem;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--ink-500);margin:0 0 .9rem}
+.steps b{color:var(--green-800)}
+.steps .sep{width:22px;height:1px;background:rgba(18,61,43,.3)}
+.tiersum{background:var(--green-100);border-radius:3px;padding:.75rem .95rem;font-size:.86rem;line-height:1.5;color:var(--green-800);margin:.6rem 0 0}
+fieldset.field{border:0;padding:0;margin:0 0 1rem;min-width:0}
+.field legend,.flabel{display:block;font-size:.74rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--green-800);margin-bottom:.45rem;padding:0}
+.field .choice{display:grid;gap:.5rem}
+.field .choice--inline{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.field .choice label{display:flex;gap:.6rem;align-items:flex-start;border:1.5px solid rgba(18,61,43,.18);border-radius:3px;padding:.7rem .85rem;cursor:pointer;font-size:.93rem;color:var(--ink-900);text-transform:none;letter-spacing:0;font-weight:600;margin:0;background:#fff;transition:border-color .15s,background .15s}
+.field .choice input{width:auto;margin-top:.22rem;flex:none;accent-color:var(--green-700)}
+.field .choice label:has(input:checked){border-color:var(--gold-500);background:#FFFDF6}
+.field .choice small{display:block;color:var(--ink-500);font-weight:400;font-size:.82rem;margin-top:.1rem}
+.field-hint{font-size:.78rem;color:var(--ink-500);margin-top:.35rem}
+.rules{font-size:.86rem;color:var(--ink-500);border:1px solid rgba(18,61,43,.16);border-radius:3px;padding:.65rem .9rem;margin:0 0 1rem;background:#fff}
+.rules summary{cursor:pointer;font-weight:700;color:var(--green-800)}
+.rules ul{margin:.6rem 0 .2rem 1.1rem;display:grid;gap:.35rem}
+.hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
+.btn[disabled]{opacity:.75;cursor:progress;transform:none}
+.form-success .btn{margin:.3rem}
 
 /* ========== RESPONSIVE ========== */
 @media(max-width:980px){
@@ -400,7 +452,7 @@ section{position:relative}
   .details__grid,.facets{grid-template-columns:repeat(2,1fr)}
   .tiers__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .timeline__row{grid-template-columns:repeat(2,1fr);gap:1.8rem 1.5rem}
-  .logowall__grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .past__grid{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
 @media(max-width:600px){
   body{font-size:16px}
@@ -415,7 +467,7 @@ section{position:relative}
   .tstop::before{top:6px;left:0}
   .tstop:not(:last-child){border-left:1px solid rgba(230,239,234,.2);margin-left:6px;padding-left:calc(1.8rem - 6px)}
   .footer__top{grid-template-columns:1fr}
-  .logowall__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .past__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(prefers-reduced-motion:reduce){
   *{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
@@ -537,7 +589,7 @@ section{position:relative}
       <div class="dcard reveal" data-d="3">
         <span class="n">04 · Awards</span>
         <h3>First place in every class</h3>
-        <p>Plus People's Choice, Student's Choice, and Sponsor's Choice — all presented at 1:30 PM. Full class list on CarShow Pro.</p>
+        <p>Plus Club's Choice, People's Choice, and Sponsor's Choice awards, all presented at 1:30 PM. Full class list on CarShow Pro.</p>
       </div>
     </div>
     <!-- schedule timeline -->
@@ -585,7 +637,7 @@ section{position:relative}
           <p class="note">Same-day registration at the gate, space permitting.</p>
         </div>
       </div>
-      <p class="register__deadline" style="margin-top:1.2rem">Spectators welcome — bring the family, enjoy the live DJ, and support the program.</p>
+      <p class="register__deadline" style="margin-top:1.2rem">Spectators are <b>free</b>. Bring the family, enjoy the live DJ, and support the program.</p>
     </div>
   </div>
 </section>
@@ -644,7 +696,7 @@ section{position:relative}
         <div class="secure" data-show-if="payDonate">Secure checkout by Square</div>
         <ul class="giveways">
           <li data-show-if="zelle"><span class="k">Zelle · no fees</span>Send to <b data-bind="zelle">CDO Auto Boosters</b> from your bank's app.</li>
-          <li><span class="k">Check</span>Payable to <b>CDO Auto Boosters</b>, 25 Calle Concordia, Tucson, AZ 85704.</li>
+          <li><span class="k">Check</span>Payable to <b>CDO Auto Boosters</b>, 25 W. Calle Concordia, Tucson, AZ 85704.</li>
           <li><span class="k">Raffle prizes</span>Donated items are welcome — <a data-bind="emailHref" href="mailto:diamondsinthedesertcarshow@gmail.com">email us</a>.</li>
         </ul>
       </aside>
@@ -659,75 +711,70 @@ section{position:relative}
           <span class="tier__tag">Top tier</span>
           <div class="tier__name"><span class="tier__gem">◆</span>Diamond</div>
           <div class="tier__price">$1,000</div>
+          <p class="tier__inc">Everything in Gold, plus</p>
           <ul>
-            <li><b>Logo + link</b> on website &amp; socials</li>
+            <li><b>Largest featured logo + link</b> on our site</li>
             <li>Banner at the registration tables</li>
-            <li>Live PA announcements about your business</li>
-            <li>Premium 10×10 booth</li>
+            <li>PA announcements throughout the show</li>
+            <li><b>Premium 20×10 booth</b></li>
             <li><b>Present the Diamond Trophy</b></li>
             <li>3 free car registrations</li>
-            <li>Goody-bag promo items</li>
           </ul>
-          <a class="btn tier__cta" data-pay="payDiamond" data-open-form data-level="Diamond — $1,000" href="#tiers">Sponsor now <span class="arw">→</span></a>
+          <a class="btn tier__cta" data-flow="sponsor" data-level="Diamond" data-pay="payDiamond" href="#tiers">Sponsor now <span class="arw">→</span></a>
         </div>
         <div class="tier tier--gold">
           <div class="tier__name"><span class="tier__gem">◆</span>Gold</div>
           <div class="tier__price">$750</div>
+          <p class="tier__inc">Everything in Silver, plus</p>
           <ul>
-            <li>Business name on our website</li>
-            <li>Acknowledgment on socials &amp; website</li>
-            <li>Recognition at the event</li>
-            <li>Premium 10×10 booth</li>
+            <li><b>Medium logo + link</b> on our site</li>
+            <li>Premium 10×10 booth location</li>
             <li>2 free car registrations</li>
-            <li>Goody-bag promo items</li>
           </ul>
-          <a class="btn btn--outline tier__cta" data-pay="payGold" data-open-form data-level="Gold — $750" href="#tiers">Sponsor now <span class="arw">→</span></a>
+          <a class="btn btn--outline tier__cta" data-flow="sponsor" data-level="Gold" data-pay="payGold" href="#tiers">Sponsor now <span class="arw">→</span></a>
         </div>
         <div class="tier tier--silver">
           <div class="tier__name"><span class="tier__gem">◆</span>Silver</div>
           <div class="tier__price">$500</div>
+          <p class="tier__inc">Everything in Copper, plus</p>
           <ul>
-            <li>Recognition at the event</li>
-            <li>Mention on socials &amp; website</li>
-            <li>10×10 booth</li>
+            <li><b>Small logo</b> on our site</li>
             <li>1 free car registration</li>
-            <li>Goody-bag promo items</li>
           </ul>
-          <a class="btn btn--outline tier__cta" data-pay="paySilver" data-open-form data-level="Silver — $500" href="#tiers">Sponsor now <span class="arw">→</span></a>
+          <a class="btn btn--outline tier__cta" data-flow="sponsor" data-level="Silver" data-pay="paySilver" href="#tiers">Sponsor now <span class="arw">→</span></a>
         </div>
         <div class="tier tier--copper">
           <div class="tier__name"><span class="tier__gem">◆</span>Copper</div>
           <div class="tier__price">$250</div>
           <ul>
-            <li>Recognition at the event</li>
-            <li>Mention on social media</li>
+            <li>Name listed on our site</li>
+            <li>Social media thank-you</li>
+            <li>Recognition at the show</li>
             <li>10×10 booth</li>
-            <li>Goody-bag promo items</li>
+            <li>Goodie-bag promo items</li>
           </ul>
-          <a class="btn btn--outline tier__cta" data-pay="payCopper" data-open-form data-level="Copper — $250" href="#tiers">Sponsor now <span class="arw">→</span></a>
+          <a class="btn btn--outline tier__cta" data-flow="sponsor" data-level="Copper" data-pay="payCopper" href="#tiers">Sponsor now <span class="arw">→</span></a>
         </div>
       </div>
-      <div class="tiers__booth">
-        <div><b>Vendor Booth</b> — a 10×10 space to advertise, sell, or host an activity. <span class="muted">An Oro Valley Public Market License ($20/yr, prorated) is required for booths.</span></div>
+      <p class="tiers__compare">Each level includes everything in the level below it, and your logo grows with your tier.</p>
+      <div class="tiers__booth" id="booths">
+        <div><b>Vendor booth</b> — a 10×10 space for retail, direct sales, arts &amp; crafts, swap meet, or antiques. <span class="muted">Check-in 9 AM, setup 9–10 AM. An Oro Valley Public Market License ($20/yr, prorated) is required. <a data-flow="vendor" data-vendor="nonprofit" href="#booths">Non-profit? Booths are $10, apply here.</a></span></div>
         <div class="tiers__boothbuy">
           <div class="tiers__boothprice">$50</div>
-          <a class="btn" data-pay="payBooth" data-open-form data-level="Vendor Booth only — $50" href="#tiers">Reserve a booth <span class="arw">→</span></a>
+          <a class="btn" data-flow="vendor" data-pay="payBooth" href="#booths">Reserve a booth <span class="arw">→</span></a>
         </div>
       </div>
-      <p class="tiers__note"><span data-show-if="payDiamond">Checkout is handled securely by Square. </span>Prefer Zelle or a check, or need an invoice? <a data-open-form href="#tiers">Send us your details</a> and we'll take care of it. After you sponsor, email your logo and a one-line business description to <a data-bind="sponsorEmailHref" href="mailto:diamondsinthedesertcarshow@gmail.com"><span data-bind="sponsorEmail">diamondsinthedesertcarshow@gmail.com</span></a> so we can feature you.</p>
+      <p class="tiers__note"><span data-show-if="payDiamond">Checkout is handled securely by Square. </span>Prefer to pay by check or Zelle, or need an invoice? <a data-flow="sponsor" data-payment="invoice" href="#tiers">Send us your details</a> and we'll take care of it. After you sponsor, email your logo to <a data-bind="sponsorEmailHref" href="mailto:diamondsinthedesertcarshow@gmail.com"><span data-bind="sponsorEmail">diamondsinthedesertcarshow@gmail.com</span></a> so we can feature you.</p>
     </div>
 
-    <div class="logowall reveal">
-      <div class="logowall__lead">Our valued sponsors</div>
-      <div class="logowall__grid">
-        <div class="logoslot"><span class="logoslot__tag">Venue Sponsor</span><img src="walmart.png" alt="Walmart — venue sponsor" loading="lazy" /></div>
-        <div class="logoslot"><img src="jim-click.png" alt="Jim Click Automotive Group" loading="lazy" /></div>
-        <div class="logoslot"><img src="oreilly.jpg" alt="O'Reilly Auto Parts" loading="lazy" /></div>
-        <div class="logoslot"><img src="big-rock-kw.png" alt="Big Rock Realty Group — Keller Williams Southern Arizona" loading="lazy" /></div>
-        <div class="logoslot"><img src="fairway.png" alt="Fairway Home Mortgage — Steve Lemmons" loading="lazy" /></div>
-        <div class="logoslot"><img src="catalina.png" alt="Catalina Towing &amp; Recovery" loading="lazy" /></div>
-        <div class="logoslot is-name">Open &amp; Shut Doors</div>
-        <a class="logoslot is-cta" href="#tiers">Become a sponsor →</a>
+    <div class="showcase reveal" id="sponsors">
+      <p class="tiers__lead">Our sponsors</p>
+      <h3 class="tiers__title">Thank you for backing the <em>build.</em></h3>
+      <div class="showcase__venue" id="venueSponsor"></div>
+      <div id="showcaseRows"></div>
+      <div class="past">
+        <p class="srow__label">Thank you to our 2026 sponsors</p>
+        <div class="past__grid" id="pastGrid"></div>
       </div>
     </div>
   </div>
@@ -861,71 +908,123 @@ section{position:relative}
     </div>
     <div class="footer__bottom">
       <span>© <span data-bind="year">2027</span> Diamonds in the Desert · CDO Autos, Canyon del Oro High School · Oro Valley, AZ</span>
-      <span>Oro Valley Marketplace · 12155 N. Oracle Rd, Oro Valley, AZ 85737</span>
+      <span>Oro Valley Marketplace · 12155 N. Oracle Rd, Oro Valley, AZ 85737 · <a href="code-of-conduct.html">Code of Conduct</a> · <a href="privacy.html">Privacy</a></span>
     </div>
   </div>
 </footer>
 
-<!-- ===================== SPONSOR FORM MODAL ===================== -->
-<div class="modal" id="sponsorModal" role="dialog" aria-modal="true" aria-labelledby="sponsorModalTitle" aria-hidden="true">
+<!-- ===================== SPONSOR + VENDOR FORMS (step 1 of 2) ===================== -->
+<div class="modal" id="formModal" role="dialog" aria-modal="true" aria-labelledby="formTitle" aria-hidden="true">
   <div class="modal__backdrop" data-close-form></div>
   <div class="modal__panel">
     <button class="modal__close" type="button" data-close-form aria-label="Close form">&times;</button>
-    <p class="eyebrow sec-eyebrow" style="margin-bottom:.7rem">2027 Sponsorship</p>
-    <h3 id="sponsorModalTitle">Sponsor the <em>show.</em></h3>
-    <p class="modal__sub">Fill this out and we'll follow up with confirmation and payment details. 100% tax-deductible through CDO Auto Boosters.</p>
-    <form id="sponsorForm" novalidate>
-      <input type="hidden" name="_subject" value="New Diamonds in the Desert Sponsorship" />
+    <div class="steps" id="formSteps"><b>1 · Your details</b><span class="sep"></span><span id="step2Label">2 · Secure payment</span></div>
+    <h3 id="formTitle">Sponsor the <em>show.</em></h3>
+    <p class="modal__sub" id="formSub"></p>
+
+    <form id="sponsorForm" data-type="sponsor" novalidate>
+      <input type="hidden" name="Form" value="Sponsor" />
+      <div class="hp" aria-hidden="true"><label>Leave blank <input name="_hp" tabindex="-1" autocomplete="off" /></label></div>
       <div class="field">
-        <label for="f_company">Company / business name <span class="req">*</span></label>
-        <input id="f_company" name="Company" required autocomplete="organization" />
+        <label for="s_level">Sponsorship level <span class="req">*</span></label>
+        <select id="s_level" name="Level" required>
+          <option value="" disabled selected>Choose a level…</option>
+          <option value="Diamond">Diamond — $1,000</option>
+          <option value="Gold">Gold — $750</option>
+          <option value="Silver">Silver — $500</option>
+          <option value="Copper">Copper — $250</option>
+        </select>
+        <p class="tiersum" id="s_tiersum" hidden></p>
       </div>
+      <div class="field"><label for="s_biz">Business name <span class="req">*</span></label><input id="s_biz" name="Business name" required autocomplete="organization" /></div>
       <div class="field--row">
-        <div class="field"><label for="f_contact">Contact name <span class="req">*</span></label><input id="f_contact" name="Contact" required autocomplete="name" /></div>
-        <div class="field"><label for="f_phone">Phone <span class="req">*</span></label><input id="f_phone" name="Phone" type="tel" required autocomplete="tel" /></div>
+        <div class="field"><label for="s_contact">Contact name <span class="req">*</span></label><input id="s_contact" name="Contact name" required autocomplete="name" /></div>
+        <div class="field"><label for="s_phone">Phone <span class="req">*</span></label><input id="s_phone" name="Phone" type="tel" required autocomplete="tel" /></div>
       </div>
-      <div class="field">
-        <label for="f_email">Email <span class="req">*</span></label>
-        <input id="f_email" name="Email" type="email" required autocomplete="email" />
-      </div>
+      <div class="field"><label for="s_email">Email <span class="req">*</span></label><input id="s_email" name="Email" type="email" required autocomplete="email" /></div>
       <div class="field--row">
-        <div class="field"><label for="f_address">Address</label><input id="f_address" name="Address" autocomplete="street-address" /></div>
-        <div class="field"><label for="f_csz">City, State, ZIP</label><input id="f_csz" name="City_State_ZIP" /></div>
+        <div class="field"><label for="s_addr">Address</label><input id="s_addr" name="Address" autocomplete="street-address" /></div>
+        <div class="field"><label for="s_csz">City, State, ZIP</label><input id="s_csz" name="City, State, ZIP" /></div>
       </div>
-      <div class="field--row">
-        <div class="field">
-          <label for="sponsorLevel">Sponsorship level <span class="req">*</span></label>
-          <select id="sponsorLevel" name="Level" required>
-            <option value="" disabled selected>Choose a level…</option>
-            <option>Diamond — $1,000</option>
-            <option>Gold — $750</option>
-            <option>Silver — $500</option>
-            <option>Copper — $250</option>
-            <option>Vendor Booth only — $50</option>
-          </select>
+      <div class="field"><label for="s_display">Name for signage &amp; our website</label><input id="s_display" name="Display name" placeholder="Same as business name" /></div>
+      <div class="field"><label for="s_web">Website or social page</label><input id="s_web" name="Website" inputmode="url" placeholder="yourbusiness.com" /><p class="field-hint">Gold and Diamond logos link here.</p></div>
+      <div class="field"><label for="s_desc">Short business description</label><textarea id="s_desc" name="Business description" placeholder="One or two sentences we can use in PA announcements and social posts."></textarea></div>
+      <fieldset class="field">
+        <legend>Will you use your booth space?</legend>
+        <div class="choice choice--inline">
+          <label><input type="radio" name="Booth" value="Yes" checked /> Yes</label>
+          <label><input type="radio" name="Booth" value="No" /> No</label>
         </div>
-        <div class="field">
-          <label for="f_booth">Need booth space?</label>
-          <select id="f_booth" name="Booth"><option>Yes</option><option>No</option></select>
+      </fieldset>
+      <fieldset class="field">
+        <legend>How would you like to pay?</legend>
+        <div class="choice">
+          <label><input type="radio" name="Payment" value="Card (Square)" checked /><span>Pay now by card<small>Secure Square checkout. Card, Apple Pay, or Google Pay.</small></span></label>
+          <label><input type="radio" name="Payment" value="Check, Zelle, or invoice" /><span>Check, Zelle, or invoice<small>We'll email you payment details.</small></span></label>
         </div>
-      </div>
-      <div class="field">
-        <label for="f_notes">Notes <span style="text-transform:none;letter-spacing:0;font-weight:400;color:var(--ink-500)">(business description for PA, logo / website link, questions)</span></label>
-        <textarea id="f_notes" name="Notes"></textarea>
-      </div>
-      <div class="field field--check">
-        <input type="checkbox" id="f_ack" name="Acknowledged" value="Yes" required />
-        <label for="f_ack">I agree to release Amphitheater Public Schools and CDO Auto Boosters from liability and to follow the event Code of Conduct.</label>
-      </div>
+      </fieldset>
+      <div class="field field--check"><input type="checkbox" id="s_ack" name="Release accepted" value="Yes" required /><label for="s_ack">I release Amphitheater Public Schools and CDO Auto Boosters from any and all known and unknown damages, injuries, judgments and/or claims, and agree to follow the event <a href="code-of-conduct.html" target="_blank" rel="noopener">Code of Conduct</a>.</label></div>
+      <div class="field"><label for="s_sig">Signature: type your full name <span class="req">*</span></label><input id="s_sig" name="Signature" required autocomplete="name" /></div>
       <div class="modal__actions">
-        <button type="submit" class="btn">Submit sponsorship <span class="arw">→</span></button>
-        <span class="modal__note">Payment by check to CDO Auto Boosters — we'll send details.</span>
+        <button type="submit" class="btn" data-submit>Continue to secure payment <span class="arw">→</span></button>
+        <span class="modal__note">100% tax-deductible through CDO Auto Boosters. We only use your info to run the show. <a href="privacy.html" target="_blank" rel="noopener">Privacy</a></span>
       </div>
     </form>
+
+    <form id="vendorForm" data-type="vendor" novalidate hidden>
+      <input type="hidden" name="Form" value="Vendor" />
+      <div class="hp" aria-hidden="true"><label>Leave blank <input name="_hp" tabindex="-1" autocomplete="off" /></label></div>
+      <div class="field"><label for="v_biz">Business name <span class="req">*</span></label><input id="v_biz" name="Business name" required autocomplete="organization" /></div>
+      <div class="field--row">
+        <div class="field"><label for="v_contact">Contact person <span class="req">*</span></label><input id="v_contact" name="Contact name" required autocomplete="name" /></div>
+        <div class="field"><label for="v_phone">Phone <span class="req">*</span></label><input id="v_phone" name="Phone" type="tel" required autocomplete="tel" /></div>
+      </div>
+      <div class="field"><label for="v_email">Email <span class="req">*</span></label><input id="v_email" name="Email" type="email" required autocomplete="email" /></div>
+      <div class="field"><label for="v_addr">Mailing address</label><input id="v_addr" name="Mailing address" autocomplete="street-address" /></div>
+      <div class="field"><label for="v_web">Website or social media</label><input id="v_web" name="Website" inputmode="url" /></div>
+      <div class="field"><label for="v_desc">What will you sell, show, or offer? <span class="req">*</span></label><textarea id="v_desc" name="Description" required></textarea></div>
+      <fieldset class="field">
+        <legend>Booth type <span class="req">*</span></legend>
+        <div class="choice">
+          <label><input type="radio" name="Vendor type" value="Retail / direct sales / arts &amp; crafts / swap meet / antiques ($50)" checked /><span>Retail, direct sales, arts &amp; crafts, swap meet, or antiques<small>$50 per 10×10 space</small></span></label>
+          <label><input type="radio" name="Vendor type" value="Non-profit ($10)" /><span>Non-profit providing information or services<small>$10 per 10×10 space. We'll contact you about payment.</small></span></label>
+        </div>
+      </fieldset>
+      <div class="field"><label for="v_count">Number of booths</label><select id="v_count" name="Booths"><option>1</option><option>2</option><option>3</option><option>4</option></select></div>
+      <fieldset class="field">
+        <legend>I'd also like to donate (optional)</legend>
+        <div class="choice choice--inline">
+          <label><input type="checkbox" name="Donating" value="Door prize" /> Door prize</label>
+          <label><input type="checkbox" name="Donating" value="Goodie-bag promo items" /><span>Goodie-bag items<small>Due Feb 23, 2027</small></span></label>
+        </div>
+      </fieldset>
+      <details class="rules">
+        <summary>Vendor rules (please read)</summary>
+        <ul>
+          <li>Spaces are first-come, first-served. Your application and non-refundable payment confirm your spot.</li>
+          <li>Check-in 9 AM, setup 9–10 AM, show 10 AM – 2 PM. Please don't set up or close early unless arranged in advance.</li>
+          <li>The Town of Oro Valley requires a Public Market License ($20/yr, prorated). <a href="https://www.orovalleyaz.gov/Government/Departments/Community-and-Economic-Development/Services/Apply-for-a-Business-License" target="_blank" rel="noopener">Apply here</a>.</li>
+          <li>You're responsible for your entire booth setup: tables, chairs, displays, and signs.</li>
+          <li>You're responsible for your own sales tax (currently 8.7%).</li>
+          <li>Sell only from your designated space.</li>
+          <li>No fireworks, pornographic material, drug paraphernalia, or vulgar or explicit items or language.</li>
+          <li>Outdoor event, rain or shine.</li>
+        </ul>
+      </details>
+      <div class="field field--check"><input type="checkbox" id="v_rules" name="Rules accepted" value="Yes" required /><label for="v_rules">I've read the vendor rules and have (or will get) an Oro Valley Public Market License.</label></div>
+      <div class="field field--check"><input type="checkbox" id="v_ack" name="Release accepted" value="Yes" required /><label for="v_ack">I release Amphitheater Public Schools and CDO Auto Boosters from any and all known and unknown damages, injuries, judgments and/or claims, and agree to follow the event <a href="code-of-conduct.html" target="_blank" rel="noopener">Code of Conduct</a>.</label></div>
+      <div class="field"><label for="v_sig">Signature: type your full name <span class="req">*</span></label><input id="v_sig" name="Signature" required autocomplete="name" /></div>
+      <div class="modal__actions">
+        <button type="submit" class="btn" data-submit>Continue to secure payment <span class="arw">→</span></button>
+        <span class="modal__note">Booth fees are non-refundable. We only use your info to run the show. <a href="privacy.html" target="_blank" rel="noopener">Privacy</a></span>
+      </div>
+    </form>
+
     <div class="form-success" id="formSuccess" hidden>
       <div class="form-success__ic">◆</div>
       <h3>Thank you!</h3>
-      <p id="formSuccessMsg">We've got your sponsorship request and will be in touch shortly.</p>
+      <p id="formSuccessMsg"></p>
+      <a class="btn" id="successPay" hidden target="_blank" rel="noopener">Continue to secure payment <span class="arw">→</span></a>
       <button type="button" class="btn btn--outline" data-close-form>Close</button>
     </div>
   </div>
@@ -951,8 +1050,9 @@ const CONFIG = {
   sponsorEmailHref: "mailto:diamondsinthedesertcarshow@gmail.com?subject=Diamonds%20in%20the%20Desert%20Sponsorship",
   sponsorPhone: "(520) 270-1419",
   sponsorPhoneHref: "tel:+15202701419",
-  // Paste a free Formspree endpoint here (e.g. "https://formspree.io/f/abcd1234") connected to the
-  // car show inbox for one-click online submissions. Left empty, the form opens the sponsor's email pre-filled.
+  // Google Sheet web-app URL (see google-sheet-setup/). While this is blank, the Sponsor/Booth
+  // buttons go straight to Square. Once it's set, they open the sponsor/vendor form first
+  // (saved to the Sheet + emailed), then continue to Square.
   formEndpoint: "",
   donateHref:  "mailto:diamondsinthedesertcarshow@gmail.com?subject=Diamonds%20in%20the%20Desert%20Donation",
 
@@ -974,6 +1074,26 @@ const CONFIG = {
   year:        "2027"
 };
 
+/* =========================================================
+   🏆  SPONSOR SHOWCASE — add 2027 sponsors here as they pay.
+   tier: "diamond" | "gold" | "silver" | "copper"
+   logo: put the file in    url: their website (Diamond & Gold logos link out)
+   ========================================================= */
+const SPONSORS = {
+  venue: { name: "Walmart", logo: "walmart.png" },
+  y2027: [
+    // { name: "Business Name", tier: "gold", logo: "business.png", url: "https://business.com" },
+  ],
+  y2026: [
+    { name: "Jim Click Automotive Group", logo: "jim-click.png" },
+    { name: "O'Reilly Auto Parts", logo: "oreilly.jpg" },
+    { name: "Big Rock Realty Group — Keller Williams Southern Arizona", logo: "big-rock-kw.png" },
+    { name: "Fairway Home Mortgage — Steve Lemmons", logo: "fairway.png" },
+    { name: "Catalina Towing & Recovery", logo: "catalina.png" },
+    { name: "Open & Shut Doors" }
+  ]
+};
+
 // Fill every [data-bind]: hrefs get the URL; text nodes get the value (preserving nested <small>).
 document.querySelectorAll("[data-bind]").forEach(el=>{
   const key = el.getAttribute("data-bind");
@@ -987,16 +1107,63 @@ document.querySelectorAll("[data-bind]").forEach(el=>{
 const heroTime = document.querySelector('.hero__fact [data-bind="timeLine"]');
 if(heroTime) heroTime.textContent = CONFIG.timeLine;
 
-/* Payments: buttons with a Square link go straight to checkout (new tab).
-   Without one they keep their fallback (sponsor form or email). Runs before the
-   form listeners attach, so a paid button never opens the form. */
+/* Sponsor showcase: renders the venue sponsor, 2027 tier rows (logo size grows with tier;
+   empty tiers show an open slot that sells that level) and the 2026 thank-you row. */
+const TIERS = {
+  diamond:{ label:"Diamond", price:"$1,000", pay:"payDiamond",
+    sum:"Largest featured logo + link, banner at registration, PA announcements all day, premium 20×10 booth, you present the Diamond Trophy, and 3 free car registrations. Plus everything in Gold." },
+  gold:{ label:"Gold", price:"$750", pay:"payGold",
+    sum:"Medium logo + link on our site, a premium 10×10 booth location, and 2 free car registrations. Plus everything in Silver." },
+  silver:{ label:"Silver", price:"$500", pay:"paySilver",
+    sum:"Small logo on our site and 1 free car registration. Plus everything in Copper." },
+  copper:{ label:"Copper", price:"$250", pay:"payCopper",
+    sum:"Your name on our site, a social media thank-you, recognition at the show, a 10×10 booth, and goodie-bag promo items." }
+};
+const esc=t=>String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function sponsorCard(sp, linkable){
+  const inner = sp.logo ? `<img src="${esc(sp.logo)}" alt="${esc(sp.name)}" loading="lazy" />` : esc(sp.name);
+  return (linkable && sp.url)
+    ? `<a class="scard" href="${esc(sp.url)}" target="_blank" rel="noopener" title="${esc(sp.name)}">${inner}</a>`
+    : `<div class="scard" title="${esc(sp.name)}">${inner}</div>`;
+}
+function openSlot(t){
+  const m=TIERS[t];
+  return `<a class="scard is-open slot-${t}" href="#tiers" data-flow="sponsor" data-level="${m.label}" data-pay="${m.pay}">${t==="copper"?"Your name here":"Your logo here"}<small>${m.label} · ${m.price}</small></a>`;
+}
+(function renderShowcase(){
+  const venue=document.getElementById("venueSponsor");
+  if(venue&&SPONSORS.venue){ venue.innerHTML=`<span class="vtag">Venue sponsor</span><img src="${esc(SPONSORS.venue.logo)}" alt="${esc(SPONSORS.venue.name)}" /><p>Thank you for hosting the show at Oro Valley Marketplace.</p>`; }
+  const rows=document.getElementById("showcaseRows");
+  if(rows && !SPONSORS.y2027.length){
+    // No 2027 sponsors yet: one row of open spots, sized by tier, so the difference reads at a glance.
+    rows.innerHTML=`<div class="srow srow--preview"><p class="srow__label"><span class="gem">◆</span>2027 sponsor wall · your logo grows with your tier</p><div class="srow__grid">${Object.keys(TIERS).map(openSlot).join("")}</div></div>`;
+  } else if(rows){
+    rows.innerHTML=Object.keys(TIERS).map(t=>{
+      const m=TIERS[t], list=SPONSORS.y2027.filter(sp=>sp.tier===t);
+      const label=`<p class="srow__label"><span class="gem">◆</span>${m.label} sponsors</p>`;
+      if(t==="copper"){
+        const names=list.map(sp=>`<span>${esc(sp.name)}</span>`).join("");
+        return `<div class="srow srow--copper">${label}<div class="copper-names">${names}<a class="open" href="#tiers" data-flow="sponsor" data-level="Copper" data-pay="payCopper">Your business here · $250</a></div></div>`;
+      }
+      const cards=list.map(sp=>sponsorCard(sp, t==="diamond"||t==="gold")).join("") || openSlot(t);
+      return `<div class="srow srow--${t}">${label}<div class="srow__grid">${cards}</div></div>`;
+    }).join("");
+  }
+  const past=document.getElementById("pastGrid");
+  if(past) past.innerHTML=SPONSORS.y2026.map(sp=>sponsorCard(sp,false)).join("");
+})();
+
+/* Button routing.
+   - Form step ON (formEndpoint set): Sponsor/Booth buttons open the form first, then go to Square.
+   - Form step OFF: buttons with a Square link go straight to checkout; anything else opens the form. */
+const FORM_ON = /^https?:\/\//.test(CONFIG.formEndpoint||"");
 document.querySelectorAll("[data-pay]").forEach(el=>{
   const url=CONFIG[el.dataset.pay];
-  if(!url) return;
+  if(!url || (FORM_ON && el.dataset.flow)) return;
   el.setAttribute("href",url);
   el.setAttribute("target","_blank");
   el.setAttribute("rel","noopener");
-  el.removeAttribute("data-open-form");
+  el.removeAttribute("data-flow");
 });
 document.querySelectorAll("[data-show-if]").forEach(el=>{ if(!CONFIG[el.dataset.showIf]) el.hidden=true; });
 
@@ -1030,61 +1197,114 @@ document.querySelectorAll(".acc__q").forEach(q=>{
   });
 });
 
-/* Sponsorship form modal */
-const modal=document.getElementById("sponsorModal");
-const sform=document.getElementById("sponsorForm");
+/* Sponsor + vendor forms (step 1 of 2) */
+const modal=document.getElementById("formModal");
+const forms={ sponsor:document.getElementById("sponsorForm"), vendor:document.getElementById("vendorForm") };
 const fsuccess=document.getElementById("formSuccess");
-let lastFocus=null;
-function openForm(level){
-  if(level){const sel=document.getElementById("sponsorLevel");if(sel){[...sel.options].forEach(o=>{if(o.value===level)sel.value=level;});}}
-  fsuccess.hidden=true; sform.hidden=false;
+const successPay=document.getElementById("successPay");
+const COPY={
+  sponsor:{ title:"Sponsor the <em>show.</em>", sub:"Takes about a minute. Your answers go straight to our sponsorship team." },
+  vendor:{ title:"Reserve a <em>booth.</em>", sub:"Saturday, March 6, 2027 · Check-in 9 AM · Setup 9–10 AM · Show 10 AM – 2 PM" }
+};
+let lastFocus=null, current="sponsor";
+function tierKey(level){ return (level||"").toLowerCase(); }
+function destFor(type){
+  const f=forms[type], fd=new FormData(f);
+  if(type==="sponsor"){
+    if(!String(fd.get("Payment")||"").startsWith("Card")) return null;
+    const t=TIERS[tierKey(fd.get("Level"))]; return t?CONFIG[t.pay]||null:null;
+  }
+  return String(fd.get("Vendor type")||"").startsWith("Non-profit") ? null : (CONFIG.payBooth||null);
+}
+function refreshForm(type){
+  const f=forms[type], dest=destFor(type), btn=f.querySelector("[data-submit]");
+  btn.innerHTML=(dest?"Continue to secure payment":(type==="vendor"?"Submit application":"Submit sponsorship"))+' <span class="arw">→</span>';
+  document.getElementById("step2Label").textContent = dest ? "2 · Secure payment" : "2 · We follow up";
+  if(type==="sponsor"){
+    const t=TIERS[tierKey(new FormData(f).get("Level"))], box=document.getElementById("s_tiersum");
+    box.hidden=!t; if(t) box.textContent=t.label+" ("+t.price+"): "+t.sum;
+  }
+}
+function openForm(type, opts){
+  opts=opts||{}; current=type;
+  Object.entries(forms).forEach(([k,f])=>{ f.hidden=(k!==type); });
+  fsuccess.hidden=true; document.getElementById("formSteps").hidden=false;
+  document.getElementById("formTitle").innerHTML=COPY[type].title;
+  document.getElementById("formSub").textContent=COPY[type].sub;
+  const f=forms[type];
+  if(type==="sponsor"){
+    if(opts.level) f.querySelector("#s_level").value=opts.level;
+    if(opts.payment==="invoice") f.querySelector('input[name="Payment"][value^="Check"]').checked=true;
+  }
+  if(type==="vendor" && opts.vendor==="nonprofit") f.querySelector('input[name="Vendor type"][value^="Non-profit"]').checked=true;
+  refreshForm(type);
   modal.classList.add("open"); modal.setAttribute("aria-hidden","false");
   document.body.style.overflow="hidden";
   lastFocus=document.activeElement;
-  const first=sform.querySelector("input,select"); if(first) setTimeout(()=>first.focus(),60);
+  const first=f.querySelector(type==="sponsor"&&opts.level?"#s_biz":"input:not([type=hidden]):not([name=_hp]),select");
+  if(first) setTimeout(()=>first.focus(),60);
 }
 function closeForm(){
   modal.classList.remove("open"); modal.setAttribute("aria-hidden","true");
   document.body.style.overflow="";
   if(lastFocus&&lastFocus.focus) lastFocus.focus();
 }
-document.querySelectorAll("[data-open-form]").forEach(el=>el.addEventListener("click",e=>{e.preventDefault();openForm(el.dataset.level||"");}));
+document.addEventListener("click",e=>{
+  const el=e.target.closest("[data-flow]"); if(!el) return;
+  e.preventDefault();
+  openForm(el.dataset.flow,{ level:el.dataset.level, payment:el.dataset.payment, vendor:el.dataset.vendor });
+});
 document.querySelectorAll("[data-close-form]").forEach(el=>el.addEventListener("click",closeForm));
+Object.entries(forms).forEach(([type,f])=>f.addEventListener("change",()=>refreshForm(type)));
 document.addEventListener("keydown",e=>{
   if(!modal.classList.contains("open")) return;
   if(e.key==="Escape"){ closeForm(); return; }
   if(e.key==="Tab"){
-    const list=[...modal.querySelectorAll('a[href],button,input,select,textarea')].filter(x=>!x.disabled&&x.offsetParent!==null);
+    const list=[...modal.querySelectorAll('a[href],button,input:not([name=_hp]),select,textarea,summary')].filter(x=>!x.disabled&&x.offsetParent!==null);
     if(!list.length) return;
     const first=list[0], last=list[list.length-1];
     if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
     else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
   }
 });
-sform.addEventListener("submit",async e=>{
+function showSuccess(msg, payUrl){
+  Object.values(forms).forEach(f=>f.hidden=true);
+  document.getElementById("formSteps").hidden=true;
+  document.getElementById("formSuccessMsg").textContent=msg;
+  successPay.hidden=!payUrl; if(payUrl) successPay.href=payUrl;
+  fsuccess.hidden=false;
+}
+Object.entries(forms).forEach(([type,f])=>f.addEventListener("submit",async e=>{
   e.preventDefault();
-  if(!sform.reportValidity()) return;
-  const data=new FormData(sform);
-  const finish=(viaEmail)=>{
-    sform.hidden=true; fsuccess.hidden=false;
-    document.getElementById("formSuccessMsg").textContent = viaEmail
-      ? "Your email app should open with your details filled in — just press send to finish. If it didn't, email us at "+CONFIG.email+"."
-      : "We've got your sponsorship request and will be in touch shortly with confirmation and payment details.";
-  };
-  const endpoint=CONFIG.formEndpoint;
-  if(endpoint&&/^https?:\/\//.test(endpoint)){
-    try{
-      const res=await fetch(endpoint,{method:"POST",body:data,headers:{"Accept":"application/json"}});
-      if(res.ok){ sform.reset(); finish(false); return; }
-      throw new Error("submit failed");
-    }catch(_){ /* fall through to email */ }
+  if(!f.reportValidity()) return;
+  const fd=new FormData(f);
+  if(fd.get("_hp")) return;                       // spam trap
+  const data={};
+  for(const [k,v] of fd.entries()){ if(k==="_hp"||v==="") continue; data[k]=data[k]?data[k]+", "+v:v; }
+  data["Submitted"]=new Date().toLocaleString("en-US",{timeZone:"America/Phoenix"});
+  const dest=destFor(type), first=String(data["Contact name"]||"").split(" ")[0]||"there";
+  data["Next step"]= dest ? "Sent to Square checkout" : (type==="sponsor" ? "Wants check / Zelle / invoice" : "Non-profit: contact about $10 payment");
+  const followUp = type==="sponsor"
+    ? `Thanks, ${first}! We'll email you payment details for your ${data.Level} sponsorship within a few days. Please send your logo to ${CONFIG.email}.`
+    : `Thanks, ${first}! Your non-profit booth application is in. We'll contact you about the $10 payment.`;
+
+  if(FORM_ON){
+    const btn=f.querySelector("[data-submit]"); btn.disabled=true;
+    btn.textContent = dest ? "Saving… taking you to checkout" : "Sending…";
+    await Promise.race([
+      fetch(CONFIG.formEndpoint,{method:"POST",mode:"no-cors",keepalive:true,body:new URLSearchParams(data)}).catch(()=>{}),
+      new Promise(r=>setTimeout(r,2500))
+    ]);
+    btn.disabled=false;
+    if(dest){ window.location.href=dest; return; }
+    f.reset(); showSuccess(followUp); return;
   }
-  const lines=[];
-  for(const [k,v] of data.entries()){ if(k[0]!=="_"&&v) lines.push(k.replace(/_/g," ")+": "+v); }
-  const company=data.get("Company")||"";
-  window.location.href="mailto:"+CONFIG.email+"?subject="+encodeURIComponent("Sponsorship — "+company)+"&body="+encodeURIComponent("New sponsorship request:\n\n"+lines.join("\n"));
-  finish(true);
-});
+  // Sheet not connected yet: hand the answers to the visitor's email app, then offer payment.
+  const subject=(type==="sponsor"?"Sponsorship — ":"Vendor application — ")+(data["Business name"]||"");
+  const body=Object.entries(data).map(([k,v])=>k+": "+v).join("\n");
+  window.location.href="mailto:"+CONFIG.email+"?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body);
+  showSuccess(dest ? "Your email app should open with your details. Press send, then finish your payment below." : "Your email app should open with your details. Press send to finish. "+followUp.replace(/^Thanks, [^!]+! /,""), dest);
+}));
 </script>
 </body>
 </html>
