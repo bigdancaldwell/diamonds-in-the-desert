@@ -194,6 +194,8 @@ section{position:relative}
 .price .amt{font-family:var(--font-display);font-weight:900;font-size:clamp(2.6rem,6vw,3.6rem);color:var(--green-900);line-height:1;margin:.6rem 0 .3rem;letter-spacing:-.02em}
 .price .note{color:var(--ink-500);font-size:.9rem}
 .register__cta{margin-top:1.8rem;display:flex;flex-wrap:wrap;gap:1rem;align-items:center}
+.register__mail{margin-top:1rem;font-size:.88rem;color:var(--ink-500);max-width:52ch;line-height:1.55}
+.register__mail b{color:var(--green-800)}
 .register__deadline{color:var(--ink-500);font-size:.9rem}
 .register__deadline b{color:var(--green-800)}
 
@@ -621,7 +623,9 @@ fieldset.field{border:0;padding:0;margin:0 0 1rem;min-width:0}
       </div>
       <div class="register__cta">
         <a class="btn" data-bind="regHref" href="https://carshowpro.com/events/view/3444">Register on CarShow Pro <span class="arw">→</span></a>
+        <a class="btn btn--outline" href="mail-in-registration-2027.pdf" download="Diamonds-in-the-Desert-2027-Mail-In-Registration.pdf" target="_blank" rel="noopener">Mail-in form (PDF) <span class="arw">↓</span></a>
       </div>
+      <p class="register__mail">Rather mail it in? Print the form and send it with a $25 check payable to <b>CDO Auto Boosters</b>, 25 W. Calle Concordia, Tucson, AZ 85704. <b>Mail-in registration closes Feb 26, 2027.</b></p>
     </div>
     <div class="reveal" data-d="1">
       <div class="prices">
@@ -839,7 +843,7 @@ fieldset.field{border:0;padding:0;margin:0 0 1rem;min-width:0}
       </div>
       <div class="acc__item">
         <button class="acc__q" aria-expanded="false">How much is registration, and how do I sign up?<span class="ic"></span></button>
-        <div class="acc__a"><p><span data-bind="priceEarly">$25</span> early bird or <span data-bind="priceDay">$30</span> day-of (deadline <span data-bind="regDeadline">Feb 28, 2027</span>). Register online at <a data-bind="regHref" href="https://carshowpro.com/events/view/3444">CarShow Pro</a>.</p></div>
+        <div class="acc__a"><p><span data-bind="priceEarly">$25</span> early bird or <span data-bind="priceDay">$30</span> day-of (deadline <span data-bind="regDeadline">Feb 28, 2027</span>). Register online at <a data-bind="regHref" href="https://carshowpro.com/events/view/3444">CarShow Pro</a>, or <a href="mail-in-registration-2027.pdf" target="_blank" rel="noopener">download the mail-in form</a> (mail-in closes Feb 26, 2027).</p></div>
       </div>
       <div class="acc__item">
         <button class="acc__q" aria-expanded="false">What kinds of cars are welcome?<span class="ic"></span></button>
@@ -885,7 +889,7 @@ fieldset.field{border:0;padding:0;margin:0 0 1rem;min-width:0}
           <span class="brand__txt"><b>Diamonds in the Desert</b><small>CDO Autos · Oro Valley</small></span>
         </a>
         <p class="footer__blurb">A student-run car show benefiting the automotive program at Canyon del Oro High School. 100% of proceeds support CDO students.</p>
-        <div class="tax"><span class="tax__mark" aria-hidden="true">◆</span> <b>Tax-deductible:</b> Contributions are made through CDO Auto Boosters. <span data-bind="taxId">Ask for our tax ID when you give.</span></div>
+        <div class="tax"><span class="tax__mark" aria-hidden="true">◆</span> <b>Tax-deductible:</b> Contributions are made through CDO Auto Boosters, a 501(c)(3) non-profit. <span data-bind="taxId">Ask for our tax ID when you give.</span></div>
       </div>
       <div>
         <h4>The Show</h4>
@@ -901,6 +905,7 @@ fieldset.field{border:0;padding:0;margin:0 0 1rem;min-width:0}
         <h4>Connect</h4>
         <ul>
           <li><a data-bind="regHref" href="https://carshowpro.com/events/view/3444">Register a Car</a></li>
+          <li><a href="mail-in-registration-2027.pdf" target="_blank" rel="noopener">Mail-in registration form</a></li>
           <li><a data-bind="emailHref" href="mailto:diamondsinthedesertcarshow@gmail.com"><span data-bind="email">diamondsinthedesertcarshow@gmail.com</span></a></li>
           <li><a data-bind="instaHref" href="https://instagram.com/diamondsinthedesertcarshow"><span data-bind="instaHandle">@diamondsinthedesertcarshow</span></a></li>
         </ul>
